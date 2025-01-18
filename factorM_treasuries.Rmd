@@ -7,7 +7,7 @@ date: "2025-01-14"
 ```{r data, include=TRUE}
 
 library(fredr)
-fredr_set_key("303c2d68bbb87a379b12111473969ddd")
+fredr_set_key("YOUR_KEY")
 
 #fetch data
 fetch_treasury_data <- function(series_id) {
@@ -78,7 +78,7 @@ knitr::opts_chunk$set(echo = TRUE)
 #fetch FED funds rate
 
 library(fredr)
-fredr_set_key("303c2d68bbb87a379b12111473969ddd")
+fredr_set_key("YOUR_KEY")
 
 fed_funds_rate <- fredr(
   series_id = "FEDFUNDS",
@@ -138,11 +138,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ## PCA
 
 ```{r PCA, include = TRUE}
-
-library("FactoMineR")
-
-pca_meta_scaled <- PCA(all_treasury_data, graph = FALSE,scale.unit = FALSE)
-condition <- as.factor(all_treasury_data$series_id) 
 
 knitr::opts_chunk$set(echo = TRUE)
 ```
