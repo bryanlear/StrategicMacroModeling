@@ -1,3 +1,5 @@
+------------------------------------------------------------------------
+
 ---
 title: "factor_modeling_US_treasuries"
 output: html_document
@@ -136,56 +138,18 @@ interactive_plot
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r Barplots,include = TRUE}
-barplot(yield_changes_mean, main = "US Treasury Yield Changes", ylab = "Daily Mean")
-barplot(yield_changes_vol, main = "US Treasury Yield Changes", ylab = "Daily Volatilities")
+```{r oil prices Brent WTI}
 
-library(dplyr)
-selected_treasuries <- yield_changes_clean%>% select("diff_DGS3MO", "diff_DGS2", "diff_DGS10")
-pairs(selected_treasuries, main = "Treasury Scatterplot Matrix")
-knitr::opts_chunk$set(echo = TRUE)
-```
+library(readr)
+brent_daily <- read_csv("oil_prices/data/brent-daily.csv")
+head(brent_daily)
 
-```{r}
-
-library(FactoMineR)
-
-
-sp500_data <- fredr_series_observations(
-  series_id = "SP500",
-  observation_start = as.Date("2023-01-01"),
-  observation_end   = Sys.Date()            
-)
-
-
-sp500_value_data <- data.frame(sp500_data$value)
-sp500_pca <- PCA(sp500_value_data, graph = TRUE,scale.unit = TRUE)
-
-
-
-
-#pairs(selected_treasuries, main = "Treasury Scatterplot Matrix")
+ggplot(data = brent_daily[-2000,], aes(x = Date, y = Price)) +
+  geom_line() +
+  labs(
+    title = "Daily Brent",
+    x = "Date",
+    y = "Price"
+  )
 
 ```
-
-\
-
-## PCA
-
-```{r PCA, include = TRUE}
-library(missMDA)
-treasury_data_values <- treasury_transposed[,-1]
-#dataframed_treasury <- data.frame(treasury_data_values)
-imputed_values <- imputePCA(treasury_data_values)
-pca_meta_scaled <- PCA(imputed_values, graph = TRUE,scale.unit = TRUE)
-
-pca_meta_scaled$var$coord[,1:2]
-
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r}
-
-```
-
-`{knitr::opts_chunk$set(echo = TRUE)}`
