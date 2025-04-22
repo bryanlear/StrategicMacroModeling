@@ -9,7 +9,7 @@ date: "2025-01-14"
 ```{r data, include=TRUE}
 
 library(fredr)
-fredr_set_key("303c2d68bbb87a379b12111473969ddd")
+fredr_set_key("KEY")
 
 #fetch data
 fetch_treasury_data <- function(series_id) {
@@ -85,7 +85,7 @@ knitr::opts_chunk$set(echo = TRUE)
 #fetch FED funds rate
 
 library(fredr)
-fredr_set_key("303c2d68bbb87a379b12111473969ddd")
+fredr_set_key("KEY")
 
 fed_funds_rate <- fredr(
   series_id = "FEDFUNDS",
