@@ -1,7 +1,4 @@
-"""
-This file contains examples for specific market data and instrument information retrieval,
-and saves the output to JSON files.
-"""
+
 
 from dotenv import load_dotenv
 from time import sleep

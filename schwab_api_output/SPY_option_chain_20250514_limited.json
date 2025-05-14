@@ -6,7 +6,7 @@
   "isDelayed": false,
   "isIndex": false,
   "interestRate": 4.25,
-  "underlyingPrice": 588.15,
+  "underlyingPrice": 588.25,
   "volatility": 29.0,
   "daysToExpiration": 0.0,
   "dividendYield": -1.0,
@@ -26,9 +26,9 @@
           "ask": 2.54,
           "last": 2.5,
           "mark": 2.53,
-          "bidSize": 87,
-          "askSize": 54,
-          "bidAskSize": "87X54",
+          "bidSize": 0,
+          "askSize": 0,
+          "bidAskSize": "0X0",
           "lastSize": 1,
           "highPrice": 0.0,
           "lowPrice": 0.0,
@@ -36,7 +36,7 @@
           "closePrice": 2.59,
           "totalVolume": 0,
           "tradeTimeInLong": 1747167286217,
-          "quoteTimeInLong": 1747167299038,
+          "quoteTimeInLong": 1747224603203,
           "netChange": -0.09,
           "volatility": 16.578,
           "delta": 0.562,
@@ -73,9 +73,9 @@
           "high52Week": 4.13,
           "low52Week": 0.16,
           "pennyPilot": true,
+          "nonStandard": false,
           "inTheMoney": true,
-          "mini": false,
-          "nonStandard": false
+          "mini": false
         }
       ],
       "587.0": [
@@ -88,9 +88,9 @@
           "ask": 1.97,
           "last": 1.97,
           "mark": 1.96,
-          "bidSize": 12,
-          "askSize": 79,
-          "bidAskSize": "12X79",
+          "bidSize": 0,
+          "askSize": 0,
+          "bidAskSize": "0X0",
           "lastSize": 1,
           "highPrice": 0.0,
           "lowPrice": 0.0,
@@ -98,7 +98,7 @@
           "closePrice": 2.1,
           "totalVolume": 0,
           "tradeTimeInLong": 1747167297351,
-          "quoteTimeInLong": 1747167298153,
+          "quoteTimeInLong": 1747224603203,
           "netChange": -0.13,
           "volatility": 16.019,
           "delta": 0.486,
@@ -135,9 +135,9 @@
           "high52Week": 3.42,
           "low52Week": 0.14,
           "pennyPilot": true,
+          "nonStandard": false,
           "inTheMoney": false,
-          "mini": false,
-          "nonStandard": false
+          "mini": false
         }
       ]
     }
@@ -154,9 +154,9 @@
           "ask": 1.73,
           "last": 1.72,
           "mark": 1.73,
-          "bidSize": 147,
-          "askSize": 4,
-          "bidAskSize": "147X4",
+          "bidSize": 0,
+          "askSize": 0,
+          "bidAskSize": "0X0",
           "lastSize": 1,
           "highPrice": 0.0,
           "lowPrice": 0.0,
@@ -164,7 +164,7 @@
           "closePrice": 1.65,
           "totalVolume": 0,
           "tradeTimeInLong": 1747167299167,
-          "quoteTimeInLong": 1747167299352,
+          "quoteTimeInLong": 1747224603203,
           "netChange": 0.07,
           "volatility": 16.617,
           "delta": -0.439,
@@ -201,9 +201,9 @@
           "high52Week": 26.48,
           "low52Week": 0.97,
           "pennyPilot": true,
+          "nonStandard": false,
           "inTheMoney": false,
-          "mini": false,
-          "nonStandard": false
+          "mini": false
         }
       ],
       "587.0": [
@@ -216,9 +216,9 @@
           "ask": 2.18,
           "last": 2.15,
           "mark": 2.17,
-          "bidSize": 245,
-          "askSize": 229,
-          "bidAskSize": "245X229",
+          "bidSize": 0,
+          "askSize": 0,
+          "bidAskSize": "0X0",
           "lastSize": 1,
           "highPrice": 0.0,
           "lowPrice": 0.0,
@@ -226,7 +226,7 @@
           "closePrice": 2.17,
           "totalVolume": 0,
           "tradeTimeInLong": 1747167299559,
-          "quoteTimeInLong": 1747167299564,
+          "quoteTimeInLong": 1747224603203,
           "netChange": -0.02,
           "volatility": 16.019,
           "delta": -0.514,
@@ -263,9 +263,9 @@
           "high52Week": 9.68,
           "low52Week": 1.24,
           "pennyPilot": true,
+          "nonStandard": false,
           "inTheMoney": true,
-          "mini": false,
-          "nonStandard": false
+          "mini": false
         }
       ]
     }
