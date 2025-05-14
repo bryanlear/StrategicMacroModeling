@@ -1,0 +1,114 @@
+{
+  "screeners": [
+    {
+      "description": "SUPER MICRO COMPUTER",
+      "volume": 6069137,
+      "lastPrice": 38.89,
+      "netChange": 0.0,
+      "marketShare": 27.65,
+      "totalVolume": 21952706,
+      "trades": 48796,
+      "netPercentChange": 0.0,
+      "symbol": "SMCI"
+    },
+    {
+      "description": "NVIDIA CORP",
+      "volume": 6013869,
+      "lastPrice": 129.93,
+      "netChange": 0.0,
+      "marketShare": 27.39,
+      "totalVolume": 21952706,
+      "trades": 83469,
+      "netPercentChange": 0.0,
+      "symbol": "NVDA"
+    },
+    {
+      "description": "TESLA INC",
+      "volume": 3186390,
+      "lastPrice": 334.07,
+      "netChange": 0.0,
+      "marketShare": 14.51,
+      "totalVolume": 21952706,
+      "trades": 90943,
+      "netPercentChange": 0.0,
+      "symbol": "TSLA"
+    },
+    {
+      "description": "PALANTIR TECHNOLOGIE A",
+      "volume": 1456290,
+      "lastPrice": 128.1,
+      "netChange": 0.0,
+      "marketShare": 6.63,
+      "totalVolume": 21952706,
+      "trades": 26197,
+      "netPercentChange": 0.0,
+      "symbol": "PLTR"
+    },
+    {
+      "description": "ADVANCED MICRO DEVIC",
+      "volume": 831453,
+      "lastPrice": 112.46,
+      "netChange": 0.0,
+      "marketShare": 3.79,
+      "totalVolume": 21952706,
+      "trades": 15285,
+      "netPercentChange": 0.0,
+      "symbol": "AMD"
+    },
+    {
+      "description": "INTEL CORP",
+      "volume": 566945,
+      "lastPrice": 22.56,
+      "netChange": 0.0,
+      "marketShare": 2.58,
+      "totalVolume": 21952706,
+      "trades": 7176,
+      "netPercentChange": 0.0,
+      "symbol": "INTC"
+    },
+    {
+      "description": "UNITEDHEALTH GROUP I",
+      "volume": 334635,
+      "lastPrice": 311.38,
+      "netChange": 0.0,
+      "marketShare": 1.52,
+      "totalVolume": 21952706,
+      "trades": 14995,
+      "netPercentChange": 0.0,
+      "symbol": "UNH"
+    },
+    {
+      "description": "ALPHABET INC A",
+      "volume": 320478,
+      "lastPrice": 159.53,
+      "netChange": 0.0,
+      "marketShare": 1.46,
+      "totalVolume": 21952706,
+      "trades": 8290,
+      "netPercentChange": 0.0,
+      "symbol": "GOOGL"
+    },
+    {
+      "description": "APPLE INC",
+      "volume": 297578,
+      "lastPrice": 212.93,
+      "netChange": 0.0,
+      "marketShare": 1.36,
+      "totalVolume": 21952706,
+      "trades": 9588,
+      "netPercentChange": 0.0,
+      "symbol": "AAPL"
+    },
+    {
+      "description": "AMAZON.COM INC",
+      "volume": 271799,
+      "lastPrice": 211.37,
+      "netChange": 0.0,
+      "marketShare": 1.24,
+      "totalVolume": 21952706,
+      "trades": 7204,
+      "netPercentChange": 0.0,
+      "symbol": "AMZN"
+    }
+  ]
+}

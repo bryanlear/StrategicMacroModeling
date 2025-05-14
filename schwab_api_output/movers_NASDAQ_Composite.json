@@ -1,0 +1,114 @@
+{
+  "screeners": [
+    {
+      "description": "DIGITAL ALLY INC NEW",
+      "volume": 55191424,
+      "lastPrice": 0.04,
+      "netChange": 0.0,
+      "marketShare": 16.67,
+      "totalVolume": 331117602,
+      "trades": 32281,
+      "netPercentChange": 0.0,
+      "symbol": "DGLY"
+    },
+    {
+      "description": "LOGICMARK INC",
+      "volume": 41339095,
+      "lastPrice": 0.01,
+      "netChange": 0.0,
+      "marketShare": 12.48,
+      "totalVolume": 331117602,
+      "trades": 11578,
+      "netPercentChange": 0.0,
+      "symbol": "LGMK"
+    },
+    {
+      "description": "DEVVSTREAM CORP",
+      "volume": 40730233,
+      "lastPrice": 0.57,
+      "netChange": 0.0,
+      "marketShare": 12.3,
+      "totalVolume": 331117602,
+      "trades": 155541,
+      "netPercentChange": 0.0,
+      "symbol": "DEVS"
+    },
+    {
+      "description": "LA ROSA HLDGS CORP",
+      "volume": 25872882,
+      "lastPrice": 0.14,
+      "netChange": 0.0,
+      "marketShare": 7.81,
+      "totalVolume": 331117602,
+      "trades": 30747,
+      "netPercentChange": 0.0,
+      "symbol": "LRHC"
+    },
+    {
+      "description": "POLYRIZON LTD",
+      "volume": 25340764,
+      "lastPrice": 0.03,
+      "netChange": 0.0,
+      "marketShare": 7.65,
+      "totalVolume": 331117602,
+      "trades": 8277,
+      "netPercentChange": 0.0,
+      "symbol": "PLRZ"
+    },
+    {
+      "description": "ENERGOUS CORP",
+      "volume": 20646457,
+      "lastPrice": 0.29,
+      "netChange": 0.0,
+      "marketShare": 6.24,
+      "totalVolume": 331117602,
+      "trades": 44014,
+      "netPercentChange": 0.0,
+      "symbol": "WATT"
+    },
+    {
+      "description": "HWH INTL INC",
+      "volume": 18326354,
+      "lastPrice": 1.21,
+      "netChange": 0.0,
+      "marketShare": 5.53,
+      "totalVolume": 331117602,
+      "trades": 166800,
+      "netPercentChange": 0.0,
+      "symbol": "HWH"
+    },
+    {
+      "description": "INNOVATIVE EYEWEAR I",
+      "volume": 8428263,
+      "lastPrice": 1.98,
+      "netChange": 0.0,
+      "marketShare": 2.55,
+      "totalVolume": 331117602,
+      "trades": 87753,
+      "netPercentChange": 0.0,
+      "symbol": "LUCY"
+    },
+    {
+      "description": "GREENLANE HLDGS INC A",
+      "volume": 7299055,
+      "lastPrice": 0.01,
+      "netChange": 0.0,
+      "marketShare": 2.2,
+      "totalVolume": 331117602,
+      "trades": 1185,
+      "netPercentChange": 0.0,
+      "symbol": "GNLN"
+    },
+    {
+      "description": "NUCANA PLC EQUITY AD Equity ADR",
+      "volume": 6445672,
+      "lastPrice": 0.03,
+      "netChange": 0.0,
+      "marketShare": 1.95,
+      "totalVolume": 331117602,
+      "trades": 3526,
+      "netPercentChange": 0.0,
+      "symbol": "NCNA"
+    }
+  ]
+}

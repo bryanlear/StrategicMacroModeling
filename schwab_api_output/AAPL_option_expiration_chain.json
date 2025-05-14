@@ -1,0 +1,172 @@
+{
+  "expirationList": [
+    {
+      "expirationDate": "2025-05-16",
+      "daysToExpiration": 2,
+      "expirationType": "S",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-05-23",
+      "daysToExpiration": 9,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-05-30",
+      "daysToExpiration": 16,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-06",
+      "daysToExpiration": 23,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-13",
+      "daysToExpiration": 30,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-20",
+      "daysToExpiration": 37,
+      "expirationType": "S",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-27",
+      "daysToExpiration": 44,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-07-18",
+      "daysToExpiration": 65,
+      "expirationType": "S",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-08-15",
+      "daysToExpiration": 93,
+      "expirationType": "S",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-09-19",
+      "daysToExpiration": 128,
+      "expirationType": "S",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-10-17",
+      "daysToExpiration": 156,
+      "expirationType": "S",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-11-21",
+      "daysToExpiration": 191,
+      "expirationType": "S",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-12-19",
+      "daysToExpiration": 219,
+      "expirationType": "S",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2026-01-16",
+      "daysToExpiration": 247,
+      "expirationType": "S",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2026-03-20",
+      "daysToExpiration": 310,
+      "expirationType": "S",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2026-06-18",
+      "daysToExpiration": 400,
+      "expirationType": "S",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2026-09-18",
+      "daysToExpiration": 492,
+      "expirationType": "S",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2026-12-18",
+      "daysToExpiration": 583,
+      "expirationType": "S",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2027-01-15",
+      "daysToExpiration": 611,
+      "expirationType": "S",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2027-06-17",
+      "daysToExpiration": 764,
+      "expirationType": "S",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    },
+    {
+      "expirationDate": "2027-12-17",
+      "daysToExpiration": 947,
+      "expirationType": "S",
+      "settlementType": "P",
+      "optionRoots": "AAPL",
+      "standard": true
+    }
+  ]
+}

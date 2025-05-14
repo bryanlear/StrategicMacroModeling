@@ -1,0 +1,81 @@
+{
+  "AMZN": {
+    "assetMainType": "EQUITY",
+    "assetSubType": "COE",
+    "quoteType": "NBBO",
+    "realtime": true,
+    "ssid": 1926977680,
+    "symbol": "AMZN",
+    "extended": {
+      "askPrice": 0.0,
+      "askSize": 0,
+      "bidPrice": 0.0,
+      "bidSize": 0,
+      "lastPrice": 211.19,
+      "lastSize": 67,
+      "mark": 0.0,
+      "quoteTime": 1747209600000,
+      "totalVolume": 0,
+      "tradeTime": 1747209596000
+    },
+    "fundamental": {
+      "avg10DaysVolume": 50345950.0,
+      "avg1YearVolume": 42017292.0,
+      "divAmount": 0.0,
+      "divFreq": 0,
+      "divPayAmount": 0.0,
+      "divYield": 0.0,
+      "eps": 5.53,
+      "fundLeverageFactor": 0.0,
+      "lastEarningsDate": "2025-05-01T00:00:00Z",
+      "peRatio": 34.43776
+    },
+    "quote": {
+      "52WeekHigh": 242.52,
+      "52WeekLow": 151.61,
+      "askMICId": "ARCX",
+      "askPrice": 211.71,
+      "askSize": 1,
+      "askTime": 1747223144328,
+      "bidMICId": "EDGX",
+      "bidPrice": 211.67,
+      "bidSize": 5,
+      "bidTime": 1747223144328,
+      "closePrice": 211.37,
+      "highPrice": 0.0,
+      "lastMICId": "ARCX",
+      "lastPrice": 211.68,
+      "lastSize": 7,
+      "lowPrice": 0.0,
+      "mark": 211.67,
+      "markChange": 0.3,
+      "markPercentChange": 0.14193121,
+      "netChange": 0.31,
+      "netPercentChange": 0.14666225,
+      "openPrice": 0.0,
+      "postMarketChange": 0.31,
+      "postMarketPercentChange": 0.14666225,
+      "quoteTime": 1747223144328,
+      "securityStatus": "Normal",
+      "totalVolume": 271799,
+      "tradeTime": 1747223161496
+    },
+    "reference": {
+      "cusip": "023135106",
+      "description": "AMAZON.COM INC",
+      "exchange": "Q",
+      "exchangeName": "NASDAQ",
+      "isHardToBorrow": false,
+      "isShortable": true,
+      "htbQuantity": 22480654,
+      "htbRate": 0.0
+    },
+    "regular": {
+      "regularMarketLastPrice": 211.37,
+      "regularMarketLastSize": 5169657,
+      "regularMarketNetChange": 2.73,
+      "regularMarketPercentChange": 1.29157402,
+      "regularMarketTradeTime": 1747166400389
+    }
+  }
+}

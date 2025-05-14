@@ -1,0 +1,10 @@
+{
+  "errors": {
+    "invalidSymbols": [
+      "$SPX.X",
+      "$DJI.X",
+      "$COMPX.X",
+      "$RUT.X"
+    ]
+  }
+}
