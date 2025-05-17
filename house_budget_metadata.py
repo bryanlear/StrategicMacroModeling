@@ -3,7 +3,6 @@ import os
 from dotenv import load_dotenv
 import json
 import datetime
-
 load_dotenv()
 
 # Configuration
@@ -12,19 +11,21 @@ DATA_GOV_API_KEY = os.getenv("DATA_GOV_API_KEY")
 
 # Output filenames
 TIMESTAMP = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-JSON_OUTPUT_FILE = f"data_gov_house_budget_search_results_{TIMESTAMP}.json"
-TXT_OUTPUT_FILE = f"data_gov_house_budget_search_results_{TIMESTAMP}.txt"
+JSON_OUTPUT_FILE = f"data_gov_house_budget_search_results_sorted_{TIMESTAMP}.json"
+TXT_OUTPUT_FILE = f"data_gov_house_budget_search_results_sorted_{TIMESTAMP}.txt"
 
 
-def search_data_gov_datasets(search_terms, api_key=None, rows_per_query=10):
+def search_data_gov_datasets(search_terms, api_key=None, rows_per_query=10, sort_by="metadata_modified desc"):
     """
-    Searches data.gov for datasets based on a list of search terms.
+    Searches data.gov for datasets based on a list of search terms, sorted by recency.
 
     Args:
         search_terms (list): A list of strings, where each string is a search query.
         api_key (str, optional): Your data.gov API key. Defaults to None.
         rows_per_query (int, optional): Number of results to request per query. Defaults to 10.
-
+        sort_by (str, optional): Sorting parameter for the API.
+                                 Defaults to "metadata_modified desc" for most recent.
+                                 Other options could be "score desc, metadata_modified desc" for relevance then date.
     Returns:
         dict: A dictionary where keys are search terms and values are lists of
               dictionaries, each representing a found dataset. Returns None on critical error.
@@ -36,14 +37,14 @@ def search_data_gov_datasets(search_terms, api_key=None, rows_per_query=10):
         print("      For more extensive use, obtaining and using an API key from data.gov is recommended.")
 
     headers = {}
-
     all_results_by_term = {}
 
     for term in search_terms:
-        print(f"\n--- Searching for datasets related to: '{term}' ---")
+        print(f"\n--- Searching for datasets related to: '{term}' (sorted by: {sort_by}) ---")
         params = {
             'q': term,
-            'rows': rows_per_query
+            'rows': rows_per_query,
+            'sort': sort_by 
         }
 
         term_datasets = []
@@ -62,11 +63,13 @@ def search_data_gov_datasets(search_terms, api_key=None, rows_per_query=10):
                     org_title = organization_info.get('title', 'N/A') if organization_info else 'N/A'
                     
                     notes = dataset_meta.get('notes', 'N/A')
+                    metadata_modified = dataset_meta.get('metadata_modified', 'N/A')
                     
                     dataset_entry = {
                         "title": dataset_meta.get('title', 'N/A'),
                         "organization": org_title,
                         "description_notes": notes,
+                        "metadata_modified": metadata_modified, 
                         "data_gov_link": f"https://catalog.data.gov/dataset/{dataset_meta.get('name', '')}",
                         "resources": []
                     }
@@ -101,7 +104,6 @@ def search_data_gov_datasets(search_terms, api_key=None, rows_per_query=10):
             print(f"An error occurred during the request for '{term}': {req_err}")
         except json.JSONDecodeError as json_err:
             print(f"Error decoding JSON response for '{term}': {json_err}. Response text: {response.text[:500]}")
-            # Potentially skip this term or return partial results
             all_results_by_term[term] = {"error": "Failed to decode JSON", "datasets_retrieved": []}
             
     return all_results_by_term
@@ -126,6 +128,7 @@ def save_results_to_txt(results_data, filename):
     try:
         with open(filename, 'w', encoding='utf-8') as f:
             f.write(f"Data.gov Search Results - {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+            f.write("Sorted by most recently modified metadata.\n")
             f.write("=====================================================================\n")
             for term, term_data in results_data.items():
                 f.write(f"\nSearch Term: \"{term}\"\n")
@@ -144,9 +147,10 @@ def save_results_to_txt(results_data, filename):
                     f.write(f"\n  Result {i+1}:\n")
                     f.write(f"    Title: {dataset.get('title', 'N/A')}\n")
                     f.write(f"    Organization: {dataset.get('organization', 'N/A')}\n")
+                    f.write(f"    Last Modified (Metadata): {dataset.get('metadata_modified', 'N/A')}\n") 
                     
                     desc = dataset.get('description_notes', 'N/A')
-                    if desc and len(desc) > 300: # Truncate long descriptions in TXT
+                    if desc and len(desc) > 300: 
                         desc = desc[:300] + "..."
                     f.write(f"    Description/Notes: {desc}\n")
                     f.write(f"    Data.gov Link: {dataset.get('data_gov_link', 'N/A')}\n")
@@ -154,7 +158,7 @@ def save_results_to_txt(results_data, filename):
                     resources = dataset.get("resources", [])
                     if resources:
                         f.write(f"    Resources ({len(resources)} available):\n")
-                        for j, resource in enumerate(resources[:5]): # Display first 5 resources
+                        for j, resource in enumerate(resources[:3]): 
                             res_name = resource.get('name', 'N/A')
                             if res_name and len(res_name) > 70: res_name = res_name[:70] + "..."
                             res_desc = resource.get('description', 'N/A')
@@ -174,24 +178,22 @@ def save_results_to_txt(results_data, filename):
 
 
 if __name__ == "__main__":
-    # Define search terms related to the House Budget Committee
+    # Define search terms
     house_budget_search_queries = [
         "House Budget Committee",
         "House Committee on the Budget data",
         "congressional budget House",
         "federal budget process House",
         "House budget resolutions",
-        # "House budget testimony", # Often PDFs, might be less structured data
-        # "House budget hearings transcripts", # Similar to testimony
-        # "House appropriations data", # Related but distinct committee
         "legislative budget data House"
     ]
 
-    # Perform the search
+    # Perform the search, sorted by most recent
     search_results = search_data_gov_datasets(
         house_budget_search_queries, 
         api_key=DATA_GOV_API_KEY,
-        rows_per_query=6
+        rows_per_query=10, 
+        sort_by="metadata_modified desc" 
     )
 
     if search_results:
