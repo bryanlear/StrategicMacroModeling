@@ -1,0 +1,816 @@
+Data.gov Search Results - 2025-05-17 21:28:38
+=====================================================================
+
+Search Term: "House Budget Committee"
+---------------------------------------------------------------------
+Total datasets found for this term: 1100
+Displaying details for 6 dataset(s):
+
+  Result 1:
+    Title: Pittsburgh American Community Survey 2015 - Miscellaneous Data
+    Organization: Allegheny County / City of Pittsburgh / Western PA Regional Data Center
+    Description/Notes: Miscellaneous Reports from the 2015 American Community Survey Report
+    Data.gov Link: https://catalog.data.gov/dataset/pittsburgh-american-community-survey-2015-miscellaneous-data
+    Resources (20 available):
+      - [1] Name: Aggregate Household Income in the Past 12 Months
+          Format: CSV
+          Description: Aggregate household income in the past 12 months, in 2015 Inflation-Adjusted Dollars.
+
+Aggregate i...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/34842307-0da6-458a-9df3-a09ab3e3a489/download/aggregate-household-income-in-the-past-12-months-in-2015-inflation-adjusted-dollars.csv
+      - [2] Name: Types of Health Insurance Coverage, By Age
+          Format: CSV
+          Description: In 2015, data on health insurance coverage were derived from answers to Question 16 in the American ...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/c9fd5859-ed34-4151-a13e-d7a25839f4d3/download/types-of-health-insurance-coverage-by-age.csv
+      - [3] Name: Contract Rent
+          Format: CSV
+          Description: The data on contract rent (also referred to as "rent asked" for vacant units) were obtained from que...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/dbf449e2-e8a1-41ce-941e-3b95041fd00c/download/contract-rent.csv
+      - [4] Name: Mortgage Status
+          Format: CSV
+          Description: “Mortgage” refers to all forms of debt where the property is pledged as security for
+repayment of t...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/c93e8aca-7772-4775-bcd4-da10354cd1cc/download/mortgage-status.csv
+      - [5] Name: Housing Unit Value
+          Format: CSV
+          Description: The data on value (also referred to as “price asked” for vacant units) were obtained from Housing Qu...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/13982f58-e618-400c-8f69-6a32dbd7c68f/download/value.csv
+
+  Result 2:
+    Title: Large Scale International Boundaries
+    Organization: Department of State
+    Description/Notes: Overview
+
+The Office of the Geographer and Global Issues at the U.S. Department of State produces the Large Scale International Boundaries (LSIB) dataset.  The current edition is version 11.4 (published 24 February 2025).  The 11.4 release contains updated boundary lines and data refinements designe...
+    Data.gov Link: https://catalog.data.gov/dataset/large-scale-international-boundaries
+    Resources (13 available):
+      - [1] Name: LSIB Webpage
+          Format: 
+          Description: Information about the Large Scale International Boundaries Dataset
+          URL: https://www.geodata.state.gov/geonetwork/srv/eng/catalog.search#/metadata/3bdb81a0-c1b9-439a-a0b1-85dac30c59b2
+      - [2] Name: Geopolitical Entities, Names, and Codes Registry
+          Format: 
+          Description: The Geopolitical Entities, Names, and Codes (GENC) Registry contains registers of standards for enco...
+          URL: https://nsgreg.nga.mil/GENC-overview.jsp
+      - [3] Name: Cartographic Guidance Bulletins
+          Format: HTML
+          Description: The guidance bulletins linked below are issued by the Office of the Geographer at the U.S. Departmen...
+          URL: https://data.geodata.state.gov/guidance/index.html
+      - [4] Name: U.S. Department of State List of Independent States in the World
+          Format: 
+          Description: 
+          URL: https://www.state.gov/independent-states-in-the-world/
+      - [5] Name: LSIB_Thumbnail.jpg
+          Format: JPEG
+          Description: Large Scale International Boundary Thumbnail
+          URL: https://data.geodata.state.gov/LSIB_Thumbnail.jpg
+
+  Result 3:
+    Title: National Hydrography Dataset (NHD) - USGS National Map Downloadable Data Collection
+    Organization: Department of the Interior
+    Description/Notes: The National Hydrography Dataset (NHD) is a feature-based database that interconnects and uniquely identifies the stream segments or reaches that make up the nation's surface water drainage system. NHD data was originally developed at 1:100,000-scale and exists at that scale for the whole country. T...
+    Data.gov Link: https://catalog.data.gov/dataset/national-hydrography-dataset-nhd-usgs-national-map-downloadable-data-collection
+    Resources (2 available):
+      - [1] Name: Original Metadata
+          Format: XML
+          Description: The metadata original format
+          URL: https://data.usgs.gov/datacatalog/metadata/USGS.ecd2ad5e-faa2-4291-bcdb-441b7113ea41.xml
+      - [2] Name: Digital Data
+          Format: XML
+          Description: Landing page for access to the data
+          URL: https://www.usgs.gov/the-national-map-data-delivery
+
+  Result 4:
+    Title: Metropolitan Area Look-Up
+    Organization: Department of Housing and Urban Development
+    Description/Notes: This system provides the user with a facility to select a state and county combination to determine if the selected county is part of an Office of Management and Budget (OMB) defined Core Based Statistical Area (CBSA). The system has been updated with OMB area definitions published for FY 2009.
+    Data.gov Link: https://catalog.data.gov/dataset/metropolitan-area-look-up
+    Resources (1 available):
+      - [1] Name: Web Page
+          Format: HTML
+          Description: select_Geography.odn
+          URL: https://www.huduser.gov/portal/datasets/geotool/select_Geography.odn
+
+  Result 5:
+    Title: Pittsburgh American Community Survey 2014 - Miscellaneous Data
+    Organization: Allegheny County / City of Pittsburgh / Western PA Regional Data Center
+    Description/Notes: Miscellaneous Reports from the 2014 American Community Survey Report
+    Data.gov Link: https://catalog.data.gov/dataset/pittsburgh-american-community-survey-2014-miscellaneous-data
+    Resources (20 available):
+      - [1] Name: Age of Householder by Household Income in the Past 12 Months
+          Format: CSV
+          Description: The data on income were derived from answers to Questions 47 and 48 in the 2014 American Community S...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/f42bb93f-32e7-491b-92c1-98905a4df239/download/age-of-householder-by-household-income-in-the-past-12-months-in-2014-inflation-adjusted-dollars.csv
+      - [2] Name: Aggregate Household Income in the Past 12 Months
+          Format: CSV
+          Description: The data on income were derived from answers to Questions 47 and 48 in the 2014 American Community S...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/41d215a7-6baf-4de8-8593-d25c858d3546/download/aggregate-household-income-in-the-past-12-months-in-2014-inflation-adjusted-dollars.csv
+      - [3] Name: Contract Rent
+          Format: CSV
+          Description: The data on contract rent (also referred to as “rent asked” for vacant units) were obtained from Hou...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/fe1d1e75-975e-42c0-b32b-64260a9a4a9a/download/contract-rent.csv
+      - [4] Name: Educational Attainment for the Population 25 Years and Over
+          Format: CSV
+          Description: Educational attainment data are needed for use in assessing the socioeconomic condition of the U.S. ...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/755c09dc-be92-4787-84a6-080d84345979/download/educational-attainment-for-the-population-25-years-and-over.csv
+      - [5] Name: Employment Status for the Population 16 Years and Over
+          Format: CSV
+          Description: The data on employment status were derived from Questions 29 and 35 to 37 in the 2014 American Commu...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/d53bfc16-9518-4c5b-b102-847654dabe21/download/employment-status-for-the-population-16-years-and-over.csv
+
+  Result 6:
+    Title: Fair Market Rents lookup tool
+    Organization: Department of Housing and Urban Development
+    Description/Notes: Fair Market Rents (FMRs) are used to determine payment standard amounts for the Housing Choice Voucher program, to determine initial renewal rents for some expiring project-based Section 8 contracts, to determine initial rents for housing assistance payment (HAP) contracts in the Moderate Rehabilita...
+    Data.gov Link: https://catalog.data.gov/dataset/fair-market-rents-for-the-section-8-housing-assistance-payments-program
+    Resources (2 available):
+      - [1] Name: HUD Fair Market Rent Documentation System
+          Format: API
+          Description: This system provides complete documentation of the development of  Fair Market Rents (FMRs) for any ...
+          URL: https://www.huduser.gov/portal/datasets/fmr.html
+      - [2] Name: FY2020 Fair Market Rents
+          Format: XLS
+          Description: FY20_4050_FMRs.xlsx
+          URL: https://www.huduser.gov/portal/datasets/fmr/fmr2020/FY20_4050_FMRs.xlsx
+---------------------------------------------------------------------
+
+Search Term: "House Committee on the Budget data"
+---------------------------------------------------------------------
+Total datasets found for this term: 28932
+Displaying details for 6 dataset(s):
+
+  Result 1:
+    Title: Mental Health Care in the Last 4 Weeks
+    Organization: U.S. Department of Health & Human Services
+    Description/Notes: The U.S. Census Bureau, in collaboration with five federal agencies, launched the Household Pulse Survey to produce data on the social and economic impacts of Covid-19 on American households.  The Household Pulse Survey was designed to gauge the impact of the pandemic on employment status, consumer ...
+    Data.gov Link: https://catalog.data.gov/dataset/mental-health-care-in-the-last-4-weeks
+    Resources (4 available):
+      - [1] Name: Comma Separated Values File
+          Format: CSV
+          Description: 
+          URL: https://data.cdc.gov/api/views/yni7-er2q/rows.csv?accessType=DOWNLOAD
+      - [2] Name: RDF File
+          Format: RDF
+          Description: 
+          URL: https://data.cdc.gov/api/views/yni7-er2q/rows.rdf?accessType=DOWNLOAD
+      - [3] Name: JSON File
+          Format: JSON
+          Description: 
+          URL: https://data.cdc.gov/api/views/yni7-er2q/rows.json?accessType=DOWNLOAD
+      - [4] Name: XML File
+          Format: XML
+          Description: 
+          URL: https://data.cdc.gov/api/views/yni7-er2q/rows.xml?accessType=DOWNLOAD
+
+  Result 2:
+    Title: FIMA NFIP Redacted Claims (OpenFEMA)
+    Organization: Department of Homeland Security
+    Description/Notes: Congress passed the National Flood Insurance Act (NFIA), 42 U.S.C. 4001 in 1968, creating the National Flood Insurance Program (NFIP) in order to reduce future flood losses through flood hazard identification, manage floodplain, and provide insurance protection. The Department of Housing and Urban D...
+    Data.gov Link: https://catalog.data.gov/dataset/fima-nfip-redacted-claims-openfema
+    Resources (1 available):
+      - [1] Name: Web Resource
+          Format: 
+          Description: 
+          URL: https://www.fema.gov/api/open/v2/FimaNfipClaims
+
+  Result 3:
+    Title: Iowa School Performance Profiles
+    Organization: State of Iowa
+    Description/Notes: The Iowa School Performance Profiles is an online tool showing how public schools performed on required measures. The website was developed to meet both federal and state requirements for publishing online school report cards: The federal Every Student Succeeds Act and House File 215, adopted by Iow...
+    Data.gov Link: https://catalog.data.gov/dataset/iowa-school-performance-profiles
+    Resources (1 available):
+      - [1] Name: Web Page
+          Format: HTML
+          Description: 
+          URL: https://www.iaschoolperformance.gov/ECP/Home/Index
+
+  Result 4:
+    Title: Pittsburgh American Community Survey 2015 - Miscellaneous Data
+    Organization: Allegheny County / City of Pittsburgh / Western PA Regional Data Center
+    Description/Notes: Miscellaneous Reports from the 2015 American Community Survey Report
+    Data.gov Link: https://catalog.data.gov/dataset/pittsburgh-american-community-survey-2015-miscellaneous-data
+    Resources (20 available):
+      - [1] Name: Aggregate Household Income in the Past 12 Months
+          Format: CSV
+          Description: Aggregate household income in the past 12 months, in 2015 Inflation-Adjusted Dollars.
+
+Aggregate i...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/34842307-0da6-458a-9df3-a09ab3e3a489/download/aggregate-household-income-in-the-past-12-months-in-2015-inflation-adjusted-dollars.csv
+      - [2] Name: Types of Health Insurance Coverage, By Age
+          Format: CSV
+          Description: In 2015, data on health insurance coverage were derived from answers to Question 16 in the American ...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/c9fd5859-ed34-4151-a13e-d7a25839f4d3/download/types-of-health-insurance-coverage-by-age.csv
+      - [3] Name: Contract Rent
+          Format: CSV
+          Description: The data on contract rent (also referred to as "rent asked" for vacant units) were obtained from que...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/dbf449e2-e8a1-41ce-941e-3b95041fd00c/download/contract-rent.csv
+      - [4] Name: Mortgage Status
+          Format: CSV
+          Description: “Mortgage” refers to all forms of debt where the property is pledged as security for
+repayment of t...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/c93e8aca-7772-4775-bcd4-da10354cd1cc/download/mortgage-status.csv
+      - [5] Name: Housing Unit Value
+          Format: CSV
+          Description: The data on value (also referred to as “price asked” for vacant units) were obtained from Housing Qu...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/13982f58-e618-400c-8f69-6a32dbd7c68f/download/value.csv
+
+  Result 5:
+    Title: National Park Boundaries
+    Organization: Earth Data Analysis Center, University of New Mexico
+    Description/Notes: National Park Service unit boundaries.
+    Data.gov Link: https://catalog.data.gov/dataset/national-park-boundaries
+    Resources (17 available):
+      - [1] Name: ArcGIS Web Mapping Service
+          Format: WMS
+          Description: 
+          URL: http://gstore.unm.edu/apps/rgisarchive/datasets/7bbe8af5-029b-4adf-b06c-134f0dd57226/services/ogc/wms?SERVICE=wms&REQUEST=GetCapabilities&VERSION=1.1.1
+      - [2] Name: ArcGIS Web Feature Service
+          Format: WFS
+          Description: 
+          URL: http://gstore.unm.edu/apps/rgisarchive/datasets/7bbe8af5-029b-4adf-b06c-134f0dd57226/services/ogc/wfs?SERVICE=wfs&REQUEST=GetCapabilities&VERSION=1.0.0
+      - [3] Name: QGIS File
+          Format: QGIS
+          Description: nps_boundary.derived.shp
+          URL: http://gstore.unm.edu/apps/rgisarchive/datasets/7bbe8af5-029b-4adf-b06c-134f0dd57226/nps_boundary.derived.shp
+      - [4] Name: Zip File
+          Format: ZIP
+          Description: nps_boundary.original.zip
+          URL: http://gstore.unm.edu/apps/rgisarchive/datasets/7bbe8af5-029b-4adf-b06c-134f0dd57226/nps_boundary.original.zip
+      - [5] Name: Web Resource
+          Format: gml
+          Description: nps_boundary.derived.gml
+          URL: http://gstore.unm.edu/apps/rgisarchive/datasets/7bbe8af5-029b-4adf-b06c-134f0dd57226/nps_boundary.derived.gml
+
+  Result 6:
+    Title: Indicators of Anxiety or Depression Based on Reported Frequency of Symptoms During Last 7 Days
+    Organization: U.S. Department of Health & Human Services
+    Description/Notes: The U.S. Census Bureau, in collaboration with five federal agencies, launched the Household Pulse Survey to produce data on the social and economic impacts of Covid-19 on American households.  The Household Pulse Survey was designed to gauge the impact of the pandemic on employment status, consumer ...
+    Data.gov Link: https://catalog.data.gov/dataset/indicators-of-anxiety-or-depression-based-on-reported-frequency-of-symptoms-during-last-7-
+    Resources (4 available):
+      - [1] Name: Comma Separated Values File
+          Format: CSV
+          Description: 
+          URL: https://data.cdc.gov/api/views/8pt5-q6wp/rows.csv?accessType=DOWNLOAD
+      - [2] Name: RDF File
+          Format: RDF
+          Description: 
+          URL: https://data.cdc.gov/api/views/8pt5-q6wp/rows.rdf?accessType=DOWNLOAD
+      - [3] Name: JSON File
+          Format: JSON
+          Description: 
+          URL: https://data.cdc.gov/api/views/8pt5-q6wp/rows.json?accessType=DOWNLOAD
+      - [4] Name: XML File
+          Format: XML
+          Description: 
+          URL: https://data.cdc.gov/api/views/8pt5-q6wp/rows.xml?accessType=DOWNLOAD
+---------------------------------------------------------------------
+
+Search Term: "congressional budget House"
+---------------------------------------------------------------------
+Total datasets found for this term: 1467
+Displaying details for 6 dataset(s):
+
+  Result 1:
+    Title: Pittsburgh American Community Survey 2015 - Miscellaneous Data
+    Organization: Allegheny County / City of Pittsburgh / Western PA Regional Data Center
+    Description/Notes: Miscellaneous Reports from the 2015 American Community Survey Report
+    Data.gov Link: https://catalog.data.gov/dataset/pittsburgh-american-community-survey-2015-miscellaneous-data
+    Resources (20 available):
+      - [1] Name: Aggregate Household Income in the Past 12 Months
+          Format: CSV
+          Description: Aggregate household income in the past 12 months, in 2015 Inflation-Adjusted Dollars.
+
+Aggregate i...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/34842307-0da6-458a-9df3-a09ab3e3a489/download/aggregate-household-income-in-the-past-12-months-in-2015-inflation-adjusted-dollars.csv
+      - [2] Name: Types of Health Insurance Coverage, By Age
+          Format: CSV
+          Description: In 2015, data on health insurance coverage were derived from answers to Question 16 in the American ...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/c9fd5859-ed34-4151-a13e-d7a25839f4d3/download/types-of-health-insurance-coverage-by-age.csv
+      - [3] Name: Contract Rent
+          Format: CSV
+          Description: The data on contract rent (also referred to as "rent asked" for vacant units) were obtained from que...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/dbf449e2-e8a1-41ce-941e-3b95041fd00c/download/contract-rent.csv
+      - [4] Name: Mortgage Status
+          Format: CSV
+          Description: “Mortgage” refers to all forms of debt where the property is pledged as security for
+repayment of t...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/c93e8aca-7772-4775-bcd4-da10354cd1cc/download/mortgage-status.csv
+      - [5] Name: Housing Unit Value
+          Format: CSV
+          Description: The data on value (also referred to as “price asked” for vacant units) were obtained from Housing Qu...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/13982f58-e618-400c-8f69-6a32dbd7c68f/download/value.csv
+
+  Result 2:
+    Title: Census Data
+    Organization: Department of Housing and Urban Development
+    Description/Notes: The Bureau of the Census has released Census 2000 Summary File 1 (SF1) 100-Percent data. The file includes the following population items: sex, age, race, Hispanic or Latino origin, household relationship, and household and family characteristics. Housing items include occupancy status and tenure (w...
+    Data.gov Link: https://catalog.data.gov/dataset/census-data
+    Resources (1 available):
+      - [1] Name: Web Page
+          Format: HTML
+          Description: Tables.zip
+          URL: http://www.hud.gov/offices/cpd/systems/census/sf1/Tables.zip
+
+  Result 3:
+    Title: Congressional Districts
+    Organization: Department of Transportation
+    Description/Notes: The 119th Congressional Districts dataset reflects boundaries from January 03, 2025 from the United States Census Bureau (USCB), and the attributes are updated every Sunday from the United States House of Representatives and is part of the U.S. Department of Transportation (USDOT)/Bureau of Transpor...
+    Data.gov Link: https://catalog.data.gov/dataset/congressional-districts5
+    Resources (3 available):
+      - [1] Name: Open Data Catalog
+          Format: 
+          Description: An ESRI Geodatabase, ESRI shapefile, or spreadsheet.
+          URL: https://doi.org/10.21949/1522027
+      - [2] Name: Esri Feature Service
+          Format: 
+          Description: ArcGIS Online Hosted Esri Feature Service for visualizing geospatial information
+          URL: https://doi.org/10.21949/1522029
+      - [3] Name: AZURE Cloud ArcGIS Server Vector Tile Service
+          Format: 
+          Description: Vector Tile Service for visualizing geospatial information
+          URL: https://doi.org/10.21949/1522030
+
+  Result 4:
+    Title: Metropolitan Area Look-Up
+    Organization: Department of Housing and Urban Development
+    Description/Notes: This system provides the user with a facility to select a state and county combination to determine if the selected county is part of an Office of Management and Budget (OMB) defined Core Based Statistical Area (CBSA). The system has been updated with OMB area definitions published for FY 2009.
+    Data.gov Link: https://catalog.data.gov/dataset/metropolitan-area-look-up
+    Resources (1 available):
+      - [1] Name: Web Page
+          Format: HTML
+          Description: select_Geography.odn
+          URL: https://www.huduser.gov/portal/datasets/geotool/select_Geography.odn
+
+  Result 5:
+    Title: USGS National Boundary Dataset (NBD) Downloadable Data Collection
+    Organization: Department of the Interior
+    Description/Notes: The USGS Governmental Unit Boundaries dataset from The National Map (TNM) represents major civil areas for the Nation,
+            including States or Territories, counties (or equivalents), Federal and Native American areas, congressional districts, minor
+            civil divisions, incorporated p...
+    Data.gov Link: https://catalog.data.gov/dataset/usgs-national-boundary-dataset-nbd-downloadable-data-collection-976ec
+    Resources (1 available):
+      - [1] Name: Original Metadata
+          Format: XML
+          Description: The metadata original format
+          URL: https://data.usgs.gov/datacatalog/metadata/USGS.6dcde538-1684-48a0-a8d6-cb671ca0a43e.xml
+
+  Result 6:
+    Title: Pittsburgh American Community Survey 2014 - Miscellaneous Data
+    Organization: Allegheny County / City of Pittsburgh / Western PA Regional Data Center
+    Description/Notes: Miscellaneous Reports from the 2014 American Community Survey Report
+    Data.gov Link: https://catalog.data.gov/dataset/pittsburgh-american-community-survey-2014-miscellaneous-data
+    Resources (20 available):
+      - [1] Name: Age of Householder by Household Income in the Past 12 Months
+          Format: CSV
+          Description: The data on income were derived from answers to Questions 47 and 48 in the 2014 American Community S...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/f42bb93f-32e7-491b-92c1-98905a4df239/download/age-of-householder-by-household-income-in-the-past-12-months-in-2014-inflation-adjusted-dollars.csv
+      - [2] Name: Aggregate Household Income in the Past 12 Months
+          Format: CSV
+          Description: The data on income were derived from answers to Questions 47 and 48 in the 2014 American Community S...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/41d215a7-6baf-4de8-8593-d25c858d3546/download/aggregate-household-income-in-the-past-12-months-in-2014-inflation-adjusted-dollars.csv
+      - [3] Name: Contract Rent
+          Format: CSV
+          Description: The data on contract rent (also referred to as “rent asked” for vacant units) were obtained from Hou...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/fe1d1e75-975e-42c0-b32b-64260a9a4a9a/download/contract-rent.csv
+      - [4] Name: Educational Attainment for the Population 25 Years and Over
+          Format: CSV
+          Description: Educational attainment data are needed for use in assessing the socioeconomic condition of the U.S. ...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/755c09dc-be92-4787-84a6-080d84345979/download/educational-attainment-for-the-population-25-years-and-over.csv
+      - [5] Name: Employment Status for the Population 16 Years and Over
+          Format: CSV
+          Description: The data on employment status were derived from Questions 29 and 35 to 37 in the 2014 American Commu...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/d53bfc16-9518-4c5b-b102-847654dabe21/download/employment-status-for-the-population-16-years-and-over.csv
+---------------------------------------------------------------------
+
+Search Term: "federal budget process House"
+---------------------------------------------------------------------
+Total datasets found for this term: 1695
+Displaying details for 6 dataset(s):
+
+  Result 1:
+    Title: FIMA NFIP Redacted Claims (OpenFEMA)
+    Organization: Department of Homeland Security
+    Description/Notes: Congress passed the National Flood Insurance Act (NFIA), 42 U.S.C. 4001 in 1968, creating the National Flood Insurance Program (NFIP) in order to reduce future flood losses through flood hazard identification, manage floodplain, and provide insurance protection. The Department of Housing and Urban D...
+    Data.gov Link: https://catalog.data.gov/dataset/fima-nfip-redacted-claims-openfema
+    Resources (1 available):
+      - [1] Name: Web Resource
+          Format: 
+          Description: 
+          URL: https://www.fema.gov/api/open/v2/FimaNfipClaims
+
+  Result 2:
+    Title: Pittsburgh American Community Survey 2015 - Miscellaneous Data
+    Organization: Allegheny County / City of Pittsburgh / Western PA Regional Data Center
+    Description/Notes: Miscellaneous Reports from the 2015 American Community Survey Report
+    Data.gov Link: https://catalog.data.gov/dataset/pittsburgh-american-community-survey-2015-miscellaneous-data
+    Resources (20 available):
+      - [1] Name: Aggregate Household Income in the Past 12 Months
+          Format: CSV
+          Description: Aggregate household income in the past 12 months, in 2015 Inflation-Adjusted Dollars.
+
+Aggregate i...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/34842307-0da6-458a-9df3-a09ab3e3a489/download/aggregate-household-income-in-the-past-12-months-in-2015-inflation-adjusted-dollars.csv
+      - [2] Name: Types of Health Insurance Coverage, By Age
+          Format: CSV
+          Description: In 2015, data on health insurance coverage were derived from answers to Question 16 in the American ...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/c9fd5859-ed34-4151-a13e-d7a25839f4d3/download/types-of-health-insurance-coverage-by-age.csv
+      - [3] Name: Contract Rent
+          Format: CSV
+          Description: The data on contract rent (also referred to as "rent asked" for vacant units) were obtained from que...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/dbf449e2-e8a1-41ce-941e-3b95041fd00c/download/contract-rent.csv
+      - [4] Name: Mortgage Status
+          Format: CSV
+          Description: “Mortgage” refers to all forms of debt where the property is pledged as security for
+repayment of t...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/c93e8aca-7772-4775-bcd4-da10354cd1cc/download/mortgage-status.csv
+      - [5] Name: Housing Unit Value
+          Format: CSV
+          Description: The data on value (also referred to as “price asked” for vacant units) were obtained from Housing Qu...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/13982f58-e618-400c-8f69-6a32dbd7c68f/download/value.csv
+
+  Result 3:
+    Title: FWS Critical Habitat for Threatened and Endangered Species Dataset
+    Organization: Department of the Interior
+    Description/Notes: When a species is proposed for listing as endangered or threatened under the Endangered Species Act, the U.S. Fish and Wildlife Service must consider whether there are areas of habitat believed to be essential the species conservation. Those areas may be proposed for designation as critical habitat....
+    Data.gov Link: https://catalog.data.gov/dataset/fws-critical-habitat-for-threatened-and-endangered-species-dataset
+    Resources (9 available):
+      - [1] Name: Feature Service
+          Format: API
+          Description: ArcGIS Online hosted feature layer with final linear features.
+          URL: https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/USFWS_Critical_Habitat/FeatureServer/1
+      - [2] Name: Feature Service
+          Format: API
+          Description: ArcGIS Online hosted feature layer with proposed polygonal features.
+          URL: https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/USFWS_Critical_Habitat/FeatureServer/2
+      - [3] Name: Feature Service
+          Format: API
+          Description: ArcGIS Online hosted feature layer with proposed linear features.
+          URL: https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/USFWS_Critical_Habitat/FeatureServer/3
+      - [4] Name: Tile Service
+          Format: API
+          Description: ArcGIS Online hosted tile service with all proposed features.
+          URL: https://tiles.arcgis.com/tiles/QVENGdaPbd4LUkLV/arcgis/rest/services/usfws_critical_habitat_proposed/MapServer
+      - [5] Name: Tile Service
+          Format: API
+          Description: ArcGIS Online hosted tile service with all final features.
+          URL: https://tiles.arcgis.com/tiles/QVENGdaPbd4LUkLV/arcgis/rest/services/usfws_critical_habitat_final/MapServer
+
+  Result 4:
+    Title: Large Scale International Boundaries
+    Organization: Department of State
+    Description/Notes: Overview
+
+The Office of the Geographer and Global Issues at the U.S. Department of State produces the Large Scale International Boundaries (LSIB) dataset.  The current edition is version 11.4 (published 24 February 2025).  The 11.4 release contains updated boundary lines and data refinements designe...
+    Data.gov Link: https://catalog.data.gov/dataset/large-scale-international-boundaries
+    Resources (13 available):
+      - [1] Name: LSIB Webpage
+          Format: 
+          Description: Information about the Large Scale International Boundaries Dataset
+          URL: https://www.geodata.state.gov/geonetwork/srv/eng/catalog.search#/metadata/3bdb81a0-c1b9-439a-a0b1-85dac30c59b2
+      - [2] Name: Geopolitical Entities, Names, and Codes Registry
+          Format: 
+          Description: The Geopolitical Entities, Names, and Codes (GENC) Registry contains registers of standards for enco...
+          URL: https://nsgreg.nga.mil/GENC-overview.jsp
+      - [3] Name: Cartographic Guidance Bulletins
+          Format: HTML
+          Description: The guidance bulletins linked below are issued by the Office of the Geographer at the U.S. Departmen...
+          URL: https://data.geodata.state.gov/guidance/index.html
+      - [4] Name: U.S. Department of State List of Independent States in the World
+          Format: 
+          Description: 
+          URL: https://www.state.gov/independent-states-in-the-world/
+      - [5] Name: LSIB_Thumbnail.jpg
+          Format: JPEG
+          Description: Large Scale International Boundary Thumbnail
+          URL: https://data.geodata.state.gov/LSIB_Thumbnail.jpg
+
+  Result 5:
+    Title: Pittsburgh American Community Survey 2014 - Miscellaneous Data
+    Organization: Allegheny County / City of Pittsburgh / Western PA Regional Data Center
+    Description/Notes: Miscellaneous Reports from the 2014 American Community Survey Report
+    Data.gov Link: https://catalog.data.gov/dataset/pittsburgh-american-community-survey-2014-miscellaneous-data
+    Resources (20 available):
+      - [1] Name: Age of Householder by Household Income in the Past 12 Months
+          Format: CSV
+          Description: The data on income were derived from answers to Questions 47 and 48 in the 2014 American Community S...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/f42bb93f-32e7-491b-92c1-98905a4df239/download/age-of-householder-by-household-income-in-the-past-12-months-in-2014-inflation-adjusted-dollars.csv
+      - [2] Name: Aggregate Household Income in the Past 12 Months
+          Format: CSV
+          Description: The data on income were derived from answers to Questions 47 and 48 in the 2014 American Community S...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/41d215a7-6baf-4de8-8593-d25c858d3546/download/aggregate-household-income-in-the-past-12-months-in-2014-inflation-adjusted-dollars.csv
+      - [3] Name: Contract Rent
+          Format: CSV
+          Description: The data on contract rent (also referred to as “rent asked” for vacant units) were obtained from Hou...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/fe1d1e75-975e-42c0-b32b-64260a9a4a9a/download/contract-rent.csv
+      - [4] Name: Educational Attainment for the Population 25 Years and Over
+          Format: CSV
+          Description: Educational attainment data are needed for use in assessing the socioeconomic condition of the U.S. ...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/755c09dc-be92-4787-84a6-080d84345979/download/educational-attainment-for-the-population-25-years-and-over.csv
+      - [5] Name: Employment Status for the Population 16 Years and Over
+          Format: CSV
+          Description: The data on employment status were derived from Questions 29 and 35 to 37 in the 2014 American Commu...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/d53bfc16-9518-4c5b-b102-847654dabe21/download/employment-status-for-the-population-16-years-and-over.csv
+
+  Result 6:
+    Title: Fair Market Rents lookup tool
+    Organization: Department of Housing and Urban Development
+    Description/Notes: Fair Market Rents (FMRs) are used to determine payment standard amounts for the Housing Choice Voucher program, to determine initial renewal rents for some expiring project-based Section 8 contracts, to determine initial rents for housing assistance payment (HAP) contracts in the Moderate Rehabilita...
+    Data.gov Link: https://catalog.data.gov/dataset/fair-market-rents-for-the-section-8-housing-assistance-payments-program
+    Resources (2 available):
+      - [1] Name: HUD Fair Market Rent Documentation System
+          Format: API
+          Description: This system provides complete documentation of the development of  Fair Market Rents (FMRs) for any ...
+          URL: https://www.huduser.gov/portal/datasets/fmr.html
+      - [2] Name: FY2020 Fair Market Rents
+          Format: XLS
+          Description: FY20_4050_FMRs.xlsx
+          URL: https://www.huduser.gov/portal/datasets/fmr/fmr2020/FY20_4050_FMRs.xlsx
+---------------------------------------------------------------------
+
+Search Term: "House budget resolutions"
+---------------------------------------------------------------------
+Total datasets found for this term: 5592
+Displaying details for 6 dataset(s):
+
+  Result 1:
+    Title: Pittsburgh American Community Survey 2015 - Miscellaneous Data
+    Organization: Allegheny County / City of Pittsburgh / Western PA Regional Data Center
+    Description/Notes: Miscellaneous Reports from the 2015 American Community Survey Report
+    Data.gov Link: https://catalog.data.gov/dataset/pittsburgh-american-community-survey-2015-miscellaneous-data
+    Resources (20 available):
+      - [1] Name: Aggregate Household Income in the Past 12 Months
+          Format: CSV
+          Description: Aggregate household income in the past 12 months, in 2015 Inflation-Adjusted Dollars.
+
+Aggregate i...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/34842307-0da6-458a-9df3-a09ab3e3a489/download/aggregate-household-income-in-the-past-12-months-in-2015-inflation-adjusted-dollars.csv
+      - [2] Name: Types of Health Insurance Coverage, By Age
+          Format: CSV
+          Description: In 2015, data on health insurance coverage were derived from answers to Question 16 in the American ...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/c9fd5859-ed34-4151-a13e-d7a25839f4d3/download/types-of-health-insurance-coverage-by-age.csv
+      - [3] Name: Contract Rent
+          Format: CSV
+          Description: The data on contract rent (also referred to as "rent asked" for vacant units) were obtained from que...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/dbf449e2-e8a1-41ce-941e-3b95041fd00c/download/contract-rent.csv
+      - [4] Name: Mortgage Status
+          Format: CSV
+          Description: “Mortgage” refers to all forms of debt where the property is pledged as security for
+repayment of t...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/c93e8aca-7772-4775-bcd4-da10354cd1cc/download/mortgage-status.csv
+      - [5] Name: Housing Unit Value
+          Format: CSV
+          Description: The data on value (also referred to as “price asked” for vacant units) were obtained from Housing Qu...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/13982f58-e618-400c-8f69-6a32dbd7c68f/download/value.csv
+
+  Result 2:
+    Title: 1 meter Digital Elevation Models (DEMs) - USGS National Map 3DEP Downloadable Data
+Collection
+    Organization: Department of the Interior
+    Description/Notes: This is a tiled collection of the 3D Elevation Program (3DEP) and is one meter
+resolution. The 3DEP data holdings serve as the elevation layer of The National Map, and
+provide foundational elevation information for earth science studies and mapping
+applications in the United States. Scientists and r...
+    Data.gov Link: https://catalog.data.gov/dataset/1-meter-digital-elevation-models-dems-usgs-national-map-3dep-downloadable-data-collection
+    Resources (2 available):
+      - [1] Name: Original Metadata
+          Format: XML
+          Description: The metadata original format
+          URL: https://data.usgs.gov/datacatalog/metadata/USGS.77ae0551-c61e-4979-aedd-d797abdcde0e.xml
+      - [2] Name: Digital Data
+          Format: XML
+          Description: Landing page for access to the data
+          URL: https://www.usgs.gov/3d-elevation-program
+
+  Result 3:
+    Title: CHIRPS Version 2.0, Precipitation, Global, 0.05Â°, Daily, 1981-present, Lon0360
+    Organization: National Oceanic and Atmospheric Administration, Department of Commerce
+    Description/Notes: This dataset has 1-day (daily) averages of the Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS), which is quasi-global rainfall data set. Spanning 50Â°S-50Â°N (and all longitudes) and ranging from 1981 to near-present, CHIRPS incorporates our in-house climatology, CHPclim, 0.0...
+    Data.gov Link: https://catalog.data.gov/dataset/chirps-version-2-0-precipitation-global-0-05a-daily-1981-present-lon0360
+    Resources (10 available):
+      - [1] Name: Data Subset Form
+          Format: HTML
+          Description: ERDDAP's version of the OPeNDAP .html web page for this dataset. Specify a subset of the dataset and...
+          URL: https://coastwatch.pfeg.noaa.gov/erddap/griddap/chirps20GlobalDailyP05_Lon0360.html
+      - [2] Name: Make-A-Graph Form
+          Format: 
+          Description: ERDDAP's Make-A-Graph .html web page for this dataset. Create an image with a map or graph of a subs...
+          URL: https://coastwatch.pfeg.noaa.gov/erddap/griddap/chirps20GlobalDailyP05_Lon0360.graph
+      - [3] Name: Background Information
+          Format: 
+          Description: Background information from the source
+          URL: https://www.chc.ucsb.edu/data/chirps
+      - [4] Name: Background Information
+          Format: 
+          Description: Background information from the source
+          URL: https://www.chc.ucsb.edu/data/chirps
+      - [5] Name: Background Information
+          Format: 
+          Description: Background information from the source
+          URL: https://www.chc.ucsb.edu/data/chirps
+
+  Result 4:
+    Title: 10-m Lidar Digital Elevation Model (meters)
+    Organization: Department of the Interior
+    Description/Notes: The 10 m resolution Lidar Digital Elevation Model (DEM) is the primary elevation data product produced and distributed by the National Park Service, Great Smoky Mountains National Park.
+    Data.gov Link: https://catalog.data.gov/dataset/10-m-lidar-digital-elevation-model-meters
+    Resources (5 available):
+      - [1] Name: GRSM_10DEM_Meters_2180603.part3.rar
+          Format: RAR
+          Description: 
+          URL: https://irma.nps.gov/DataStore/DownloadFile/439854?Reference=2180603
+      - [2] Name: GRSM_10DEM_Meters_2180603.part4.rar
+          Format: RAR
+          Description: 
+          URL: https://irma.nps.gov/DataStore/DownloadFile/532390?Reference=2180603
+      - [3] Name: GRSM_10DEM_Meters_2180603.part1.rar
+          Format: RAR
+          Description: 
+          URL: https://irma.nps.gov/DataStore/DownloadFile/442057?Reference=2180603
+      - [4] Name: OriginalMetadata_NPSDataStoreCode_2180603.xml
+          Format: XML
+          Description: Original FGDC metadata used to create this reference. Be aware that some of the fields, including fi...
+          URL: https://irma.nps.gov/DataStore/DownloadFile/540724?Reference=2180603
+      - [5] Name: GRSM_10DEM_Meters_2180603.part2.rar
+          Format: RAR
+          Description: 
+          URL: https://irma.nps.gov/DataStore/DownloadFile/439853?Reference=2180603
+
+  Result 5:
+    Title: Purchase Order Quantity Price detail for Commodity/Goods procurements
+    Organization: City of Austin
+    Description/Notes: Purchase Order commodity line level detail for City of Austin Commodities/Goods purchases dating back to October 1st, 2009.  Each line includes the NIGP Commodity Code/COA Inventory Code, commodity description, quantity, unit of measure, unit price, total amount, referenced Master Agreement if appli...
+    Data.gov Link: https://catalog.data.gov/dataset/purchase-order-quantity-price-detail-for-commodity-goods-procurements
+    Resources (4 available):
+      - [1] Name: Comma Separated Values File
+          Format: CSV
+          Description: 
+          URL: https://data.austintexas.gov/api/views/3ebq-e9iz/rows.csv?accessType=DOWNLOAD
+      - [2] Name: RDF File
+          Format: RDF
+          Description: 
+          URL: https://data.austintexas.gov/api/views/3ebq-e9iz/rows.rdf?accessType=DOWNLOAD
+      - [3] Name: JSON File
+          Format: JSON
+          Description: 
+          URL: https://data.austintexas.gov/api/views/3ebq-e9iz/rows.json?accessType=DOWNLOAD
+      - [4] Name: XML File
+          Format: XML
+          Description: 
+          URL: https://data.austintexas.gov/api/views/3ebq-e9iz/rows.xml?accessType=DOWNLOAD
+
+  Result 6:
+    Title: National Hydrography Dataset (NHD) - USGS National Map Downloadable Data Collection
+    Organization: Department of the Interior
+    Description/Notes: The National Hydrography Dataset (NHD) is a feature-based database that interconnects and uniquely identifies the stream segments or reaches that make up the nation's surface water drainage system. NHD data was originally developed at 1:100,000-scale and exists at that scale for the whole country. T...
+    Data.gov Link: https://catalog.data.gov/dataset/national-hydrography-dataset-nhd-usgs-national-map-downloadable-data-collection
+    Resources (2 available):
+      - [1] Name: Original Metadata
+          Format: XML
+          Description: The metadata original format
+          URL: https://data.usgs.gov/datacatalog/metadata/USGS.ecd2ad5e-faa2-4291-bcdb-441b7113ea41.xml
+      - [2] Name: Digital Data
+          Format: XML
+          Description: Landing page for access to the data
+          URL: https://www.usgs.gov/the-national-map-data-delivery
+---------------------------------------------------------------------
+
+Search Term: "legislative budget data House"
+---------------------------------------------------------------------
+Total datasets found for this term: 2318
+Displaying details for 6 dataset(s):
+
+  Result 1:
+    Title: Pittsburgh American Community Survey 2015 - Miscellaneous Data
+    Organization: Allegheny County / City of Pittsburgh / Western PA Regional Data Center
+    Description/Notes: Miscellaneous Reports from the 2015 American Community Survey Report
+    Data.gov Link: https://catalog.data.gov/dataset/pittsburgh-american-community-survey-2015-miscellaneous-data
+    Resources (20 available):
+      - [1] Name: Aggregate Household Income in the Past 12 Months
+          Format: CSV
+          Description: Aggregate household income in the past 12 months, in 2015 Inflation-Adjusted Dollars.
+
+Aggregate i...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/34842307-0da6-458a-9df3-a09ab3e3a489/download/aggregate-household-income-in-the-past-12-months-in-2015-inflation-adjusted-dollars.csv
+      - [2] Name: Types of Health Insurance Coverage, By Age
+          Format: CSV
+          Description: In 2015, data on health insurance coverage were derived from answers to Question 16 in the American ...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/c9fd5859-ed34-4151-a13e-d7a25839f4d3/download/types-of-health-insurance-coverage-by-age.csv
+      - [3] Name: Contract Rent
+          Format: CSV
+          Description: The data on contract rent (also referred to as "rent asked" for vacant units) were obtained from que...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/dbf449e2-e8a1-41ce-941e-3b95041fd00c/download/contract-rent.csv
+      - [4] Name: Mortgage Status
+          Format: CSV
+          Description: “Mortgage” refers to all forms of debt where the property is pledged as security for
+repayment of t...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/c93e8aca-7772-4775-bcd4-da10354cd1cc/download/mortgage-status.csv
+      - [5] Name: Housing Unit Value
+          Format: CSV
+          Description: The data on value (also referred to as “price asked” for vacant units) were obtained from Housing Qu...
+          URL: https://data.wprdc.org/dataset/5b18c198-474c-4723-b735-cc5220ad43cc/resource/13982f58-e618-400c-8f69-6a32dbd7c68f/download/value.csv
+
+  Result 2:
+    Title: Metropolitan Area Look-Up
+    Organization: Department of Housing and Urban Development
+    Description/Notes: This system provides the user with a facility to select a state and county combination to determine if the selected county is part of an Office of Management and Budget (OMB) defined Core Based Statistical Area (CBSA). The system has been updated with OMB area definitions published for FY 2009.
+    Data.gov Link: https://catalog.data.gov/dataset/metropolitan-area-look-up
+    Resources (1 available):
+      - [1] Name: Web Page
+          Format: HTML
+          Description: select_Geography.odn
+          URL: https://www.huduser.gov/portal/datasets/geotool/select_Geography.odn
+
+  Result 3:
+    Title: Pittsburgh American Community Survey 2014 - Miscellaneous Data
+    Organization: Allegheny County / City of Pittsburgh / Western PA Regional Data Center
+    Description/Notes: Miscellaneous Reports from the 2014 American Community Survey Report
+    Data.gov Link: https://catalog.data.gov/dataset/pittsburgh-american-community-survey-2014-miscellaneous-data
+    Resources (20 available):
+      - [1] Name: Age of Householder by Household Income in the Past 12 Months
+          Format: CSV
+          Description: The data on income were derived from answers to Questions 47 and 48 in the 2014 American Community S...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/f42bb93f-32e7-491b-92c1-98905a4df239/download/age-of-householder-by-household-income-in-the-past-12-months-in-2014-inflation-adjusted-dollars.csv
+      - [2] Name: Aggregate Household Income in the Past 12 Months
+          Format: CSV
+          Description: The data on income were derived from answers to Questions 47 and 48 in the 2014 American Community S...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/41d215a7-6baf-4de8-8593-d25c858d3546/download/aggregate-household-income-in-the-past-12-months-in-2014-inflation-adjusted-dollars.csv
+      - [3] Name: Contract Rent
+          Format: CSV
+          Description: The data on contract rent (also referred to as “rent asked” for vacant units) were obtained from Hou...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/fe1d1e75-975e-42c0-b32b-64260a9a4a9a/download/contract-rent.csv
+      - [4] Name: Educational Attainment for the Population 25 Years and Over
+          Format: CSV
+          Description: Educational attainment data are needed for use in assessing the socioeconomic condition of the U.S. ...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/755c09dc-be92-4787-84a6-080d84345979/download/educational-attainment-for-the-population-25-years-and-over.csv
+      - [5] Name: Employment Status for the Population 16 Years and Over
+          Format: CSV
+          Description: The data on employment status were derived from Questions 29 and 35 to 37 in the 2014 American Commu...
+          URL: https://data.wprdc.org/dataset/c6265ffb-c86e-4a2c-870b-1aaa0772c449/resource/d53bfc16-9518-4c5b-b102-847654dabe21/download/employment-status-for-the-population-16-years-and-over.csv
+
+  Result 4:
+    Title: Current Employee Names, Salaries, and Position Titles
+    Organization: City of Chicago
+    Description/Notes: This dataset is a listing of all active City of Chicago employees, complete with full names, departments, positions, employment status (part-time or full-time), frequency of hourly employee –where applicable—and annual salaries or hourly rate. Please note that "active" has a specific meaning for Hum...
+    Data.gov Link: https://catalog.data.gov/dataset/current-employee-names-salaries-and-position-titles
+    Resources (4 available):
+      - [1] Name: Comma Separated Values File
+          Format: CSV
+          Description: 
+          URL: https://data.cityofchicago.org/api/views/xzkq-xp2w/rows.csv?accessType=DOWNLOAD
+      - [2] Name: RDF File
+          Format: RDF
+          Description: 
+          URL: https://data.cityofchicago.org/api/views/xzkq-xp2w/rows.rdf?accessType=DOWNLOAD
+      - [3] Name: JSON File
+          Format: JSON
+          Description: 
+          URL: https://data.cityofchicago.org/api/views/xzkq-xp2w/rows.json?accessType=DOWNLOAD
+      - [4] Name: XML File
+          Format: XML
+          Description: 
+          URL: https://data.cityofchicago.org/api/views/xzkq-xp2w/rows.xml?accessType=DOWNLOAD
+
+  Result 5:
+    Title: Fair Market Rents lookup tool
+    Organization: Department of Housing and Urban Development
+    Description/Notes: Fair Market Rents (FMRs) are used to determine payment standard amounts for the Housing Choice Voucher program, to determine initial renewal rents for some expiring project-based Section 8 contracts, to determine initial rents for housing assistance payment (HAP) contracts in the Moderate Rehabilita...
+    Data.gov Link: https://catalog.data.gov/dataset/fair-market-rents-for-the-section-8-housing-assistance-payments-program
+    Resources (2 available):
+      - [1] Name: HUD Fair Market Rent Documentation System
+          Format: API
+          Description: This system provides complete documentation of the development of  Fair Market Rents (FMRs) for any ...
+          URL: https://www.huduser.gov/portal/datasets/fmr.html
+      - [2] Name: FY2020 Fair Market Rents
+          Format: XLS
+          Description: FY20_4050_FMRs.xlsx
+          URL: https://www.huduser.gov/portal/datasets/fmr/fmr2020/FY20_4050_FMRs.xlsx
+
+  Result 6:
+    Title: Census Tracts in 2020
+    Organization: District of Columbia
+    Description/Notes: <div style='text-align:Left;'><div><div><p><span>Census Tracts from 2020. The TIGER/Line shapefiles are an extract of selected geographic and cartographic information from the U.S. Census Bureau's Master Address File / Topologically Integrated Geographic Encoding and Referencing (MAF/TIGER) Database...
+    Data.gov Link: https://catalog.data.gov/dataset/census-tracts-in-2020
+    Resources (7 available):
+      - [1] Name: ArcGIS Hub Dataset
+          Format: HTML
+          Description: 
+          URL: https://opendata.dc.gov/datasets/DCGIS::census-tracts-in-2020
+      - [2] Name: ArcGIS GeoService
+          Format: ArcGIS GeoServices REST API
+          Description: 
+          URL: https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/8
+      - [3] Name: OGC WMS
+          Format: OGC WMS
+          Description: 
+          URL: https://maps2.dcgis.dc.gov/dcgis/services/DCGIS_DATA/Demographic_WebMercator/MapServer/WMSServer?request=GetCapabilities&service=WMS
+      - [4] Name: CSV
+          Format: CSV
+          Description: 
+          URL: https://opendata.dc.gov/api/download/v1/items/95f1885eff9a4c089012a872c851c50a/csv?layers=8
+      - [5] Name: Shapefile
+          Format: ZIP
+          Description: 
+          URL: https://opendata.dc.gov/api/download/v1/items/95f1885eff9a4c089012a872c851c50a/shapefile?layers=8
+---------------------------------------------------------------------
+
+--- End of Report ---
