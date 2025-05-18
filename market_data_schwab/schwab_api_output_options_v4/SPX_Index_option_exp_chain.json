@@ -1,0 +1,437 @@
+{
+  "expirationList": [
+    {
+      "expirationDate": "2025-05-19",
+      "daysToExpiration": 1,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-05-20",
+      "daysToExpiration": 2,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-05-21",
+      "daysToExpiration": 3,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-05-22",
+      "daysToExpiration": 4,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-05-23",
+      "daysToExpiration": 5,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-05-27",
+      "daysToExpiration": 9,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-05-28",
+      "daysToExpiration": 10,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-05-29",
+      "daysToExpiration": 11,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-05-30",
+      "daysToExpiration": 12,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-02",
+      "daysToExpiration": 15,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-03",
+      "daysToExpiration": 16,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-04",
+      "daysToExpiration": 17,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-05",
+      "daysToExpiration": 18,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-06",
+      "daysToExpiration": 19,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-09",
+      "daysToExpiration": 22,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-10",
+      "daysToExpiration": 23,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-11",
+      "daysToExpiration": 24,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-12",
+      "daysToExpiration": 25,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-13",
+      "daysToExpiration": 26,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-16",
+      "daysToExpiration": 29,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-17",
+      "daysToExpiration": 30,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-18",
+      "daysToExpiration": 31,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-20",
+      "daysToExpiration": 33,
+      "expirationType": "S",
+      "settlementType": "B",
+      "optionRoots": "SPX, SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-23",
+      "daysToExpiration": 36,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-24",
+      "daysToExpiration": 37,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-25",
+      "daysToExpiration": 38,
+      "expirationType": "S",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-26",
+      "daysToExpiration": 39,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-27",
+      "daysToExpiration": 40,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-06-30",
+      "daysToExpiration": 43,
+      "expirationType": "Q",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-07-11",
+      "daysToExpiration": 54,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-07-18",
+      "daysToExpiration": 61,
+      "expirationType": "S",
+      "settlementType": "B",
+      "optionRoots": "SPX, SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-07-31",
+      "daysToExpiration": 74,
+      "expirationType": "M",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-08-15",
+      "daysToExpiration": 89,
+      "expirationType": "S",
+      "settlementType": "B",
+      "optionRoots": "SPX, SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-08-29",
+      "daysToExpiration": 103,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-09-19",
+      "daysToExpiration": 124,
+      "expirationType": "S",
+      "settlementType": "B",
+      "optionRoots": "SPX, SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-09-30",
+      "daysToExpiration": 135,
+      "expirationType": "Q",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-10-17",
+      "daysToExpiration": 152,
+      "expirationType": "S",
+      "settlementType": "B",
+      "optionRoots": "SPX, SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-10-31",
+      "daysToExpiration": 166,
+      "expirationType": "W",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-11-21",
+      "daysToExpiration": 187,
+      "expirationType": "S",
+      "settlementType": "A",
+      "optionRoots": "SPX",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-12-19",
+      "daysToExpiration": 215,
+      "expirationType": "S",
+      "settlementType": "A",
+      "optionRoots": "SPX",
+      "standard": true
+    },
+    {
+      "expirationDate": "2025-12-31",
+      "daysToExpiration": 227,
+      "expirationType": "Q",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2026-01-16",
+      "daysToExpiration": 243,
+      "expirationType": "S",
+      "settlementType": "A",
+      "optionRoots": "SPX",
+      "standard": true
+    },
+    {
+      "expirationDate": "2026-02-20",
+      "daysToExpiration": 278,
+      "expirationType": "S",
+      "settlementType": "A",
+      "optionRoots": "SPX",
+      "standard": true
+    },
+    {
+      "expirationDate": "2026-03-20",
+      "daysToExpiration": 306,
+      "expirationType": "S",
+      "settlementType": "A",
+      "optionRoots": "SPX",
+      "standard": true
+    },
+    {
+      "expirationDate": "2026-03-31",
+      "daysToExpiration": 317,
+      "expirationType": "Q",
+      "settlementType": "P",
+      "optionRoots": "SPXW",
+      "standard": true
+    },
+    {
+      "expirationDate": "2026-04-17",
+      "daysToExpiration": 334,
+      "expirationType": "S",
+      "settlementType": "A",
+      "optionRoots": "SPX",
+      "standard": true
+    },
+    {
+      "expirationDate": "2026-05-15",
+      "daysToExpiration": 362,
+      "expirationType": "S",
+      "settlementType": "A",
+      "optionRoots": "SPX",
+      "standard": true
+    },
+    {
+      "expirationDate": "2026-06-18",
+      "daysToExpiration": 396,
+      "expirationType": "S",
+      "settlementType": "A",
+      "optionRoots": "SPX",
+      "standard": true
+    },
+    {
+      "expirationDate": "2026-09-18",
+      "daysToExpiration": 488,
+      "expirationType": "S",
+      "settlementType": "A",
+      "optionRoots": "SPX",
+      "standard": true
+    },
+    {
+      "expirationDate": "2026-12-18",
+      "daysToExpiration": 579,
+      "expirationType": "S",
+      "settlementType": "A",
+      "optionRoots": "SPX",
+      "standard": true
+    },
+    {
+      "expirationDate": "2027-12-17",
+      "daysToExpiration": 943,
+      "expirationType": "S",
+      "settlementType": "A",
+      "optionRoots": "SPX",
+      "standard": true
+    },
+    {
+      "expirationDate": "2028-12-15",
+      "daysToExpiration": 1307,
+      "expirationType": "S",
+      "settlementType": "A",
+      "optionRoots": "SPX",
+      "standard": true
+    },
+    {
+      "expirationDate": "2029-12-21",
+      "daysToExpiration": 1678,
+      "expirationType": "S",
+      "settlementType": "A",
+      "optionRoots": "SPX",
+      "standard": true
+    },
+    {
+      "expirationDate": "2030-12-20",
+      "daysToExpiration": 2042,
+      "expirationType": "S",
+      "settlementType": "A",
+      "optionRoots": "SPX",
+      "standard": true
+    }
+  ],
+  "schwab_api_status": "SUCCESS_IMPLIED"
+}
