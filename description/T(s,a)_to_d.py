@@ -5,6 +5,7 @@ import pandas_datareader.data as pdr
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+from plotly.subplots import make_subplots 
 import datetime
 import os
 import requests
@@ -22,6 +23,7 @@ START_DATE = END_DATE - datetime.timedelta(days=2 * 365)
 
 YF_TICKERS_MAP = {}
 FRED_GENERAL_TICKERS_MAP = {
+    "Federal_Funds_Rate": "DFF",
     "US_2Y_Treasury": "DGS2",
     "US_10Y_Treasury": "DGS10",
     "USD_Index_FRED": "DTWEXBGS",
@@ -162,6 +164,9 @@ def load_and_prepare_data_for_plotting(data_file_path=LOCAL_DATA_FILE):
             print("ERROR: Loaded data is empty.")
             return None, None
         print("Data loaded successfully. Standardizing relevant series...")
+    except FileNotFoundError:
+        print(f"ERROR: Data file '{data_file_path}' not found. Please run data fetching first.")
+        return None, None
     except Exception as e:
         print(f"ERROR: Reading data from CSV '{data_file_path}' failed: {e}")
         return None, None
@@ -169,7 +174,7 @@ def load_and_prepare_data_for_plotting(data_file_path=LOCAL_DATA_FILE):
     cols_for_standardization = [
         "USD_Index_FRED", "US_2Y_Treasury", "US_10Y_Treasury",
         "EUR_USD_FRED", "GBP_USD_FRED", "USD_PER_JPY_FRED",
-        "Brent", "WTI"
+        "Brent", "WTI", "Federal_Funds_Rate"
     ]
     standardized_data = pd.DataFrame(index=all_data.index)
     for col in cols_for_standardization:
@@ -178,6 +183,12 @@ def load_and_prepare_data_for_plotting(data_file_path=LOCAL_DATA_FILE):
             standardized_data[col + "_std"] = standardized_series_data
         else:
             print(f"WARNING: Column {col} not found in loaded data for standardization.")
+            
+        standardized_data = standardized_data.dropna(axis=1, how='all')
+
+    if standardized_data.empty:
+        print("WARNING: Standardized data is empty after processing. No standardized plots can be generated.")
+        
     return all_data, standardized_data
 
 
@@ -217,30 +228,65 @@ def plot_standardized_usd_treasuries(standardized_df):
 def plot_treasury_spread(original_df):
     """Plots the 10Y-2Y Treasury yield spread using Plotly (original values)."""
     if original_df is None or original_df.empty:
-        print("Plot 2: No original data to plot treasury spread.")
+        print("Plot 2: No original data to plot treasury spread or DFF.")
         return None
 
-    required_cols = ["US_10Y_Treasury", "US_2Y_Treasury"]
+    # Define the required columns for the plot
+    required_cols = ["US_10Y_Treasury", "US_2Y_Treasury", "Federal_Funds_Rate"] # Use Federal_Funds_Rate as per ALL_FRED_TICKERS
+
+    # Check if all required columns are present in the DataFrame
     if not all(col in original_df.columns for col in required_cols):
-        print(f"Plot 2: Missing one or more required columns for spread: {required_cols}")
+        print(f"Plot 2: Missing one or more required columns for spread and DFF: {required_cols}")
         return None
 
+    # Convert the relevant columns to numeric, coercing any errors to NaN
     us_10y_orig = pd.to_numeric(original_df["US_10Y_Treasury"], errors='coerce')
     us_2y_orig = pd.to_numeric(original_df["US_2Y_Treasury"], errors='coerce')
+    dff_orig = pd.to_numeric(original_df["Federal_Funds_Rate"], errors='coerce') # Use Federal_Funds_Rate column name
 
+    # Check if all values in the converted series are NaN for either series
     if us_10y_orig.isnull().all() or us_2y_orig.isnull().all():
-        print("Plot 2: Original Treasury data is all NaN after numeric conversion.")
+        print("Plot 2: Original Treasury data (10Y or 2Y) is all NaN after numeric conversion. Cannot plot spread.")
+        return None
+    if dff_orig.isnull().all():
+        print("Plot 2: Original Fed Funds Rate (DFF) data is all NaN after numeric conversion. Cannot plot DFF.")
+        # We can still plot the spread if DFF is NaN, but the user asked for both.
+        # For now, if DFF is all NaN, return None as the plot won't be complete as requested.
         return None
         
     treasury_yield_diff = us_10y_orig - us_2y_orig
-    # DataFrame for Plotly
-    plot_df = pd.DataFrame({'Yield Spread': treasury_yield_diff}, index=original_df.index)
     
-    fig = px.line(plot_df, y='Yield Spread',
-                  title="Treasury Yield Difference (10-Year - 2-Year) Over Time (Original Values)",
-                  labels={"Yield Spread": "Yield Difference (%)", "date": "Date"})
-    fig.add_hline(y=0, line_dash="dash", line_color="black", annotation_text="0 Spread", annotation_position="bottom right")
-    fig.update_layout(showlegend=True, legend_title_text='')
+    # Create the figure with a secondary y-axis
+    fig = make_subplots(specs=[[{"secondary_y": True}]])
+
+    # Add the Treasury Yield Spread trace to the primary y-axis
+    fig.add_trace(
+        go.Scatter(x=original_df.index, y=treasury_yield_diff, name='Yield Spread (10Y - 2Y)', mode='lines', line=dict(color='blue')),
+        secondary_y=False,
+    )
+
+    # Add the Fed Funds Rate (DFF) trace to the secondary y-axis
+    fig.add_trace(
+        go.Scatter(x=original_df.index, y=dff_orig, name='Fed Funds Rate (DFF)', mode='lines', line=dict(color='red')),
+        secondary_y=True,
+    )
+
+    # Add a horizontal line at y=0 for the yield spread on the primary y-axis
+    fig.add_hline(y=0, line_dash="dash", line_color="black", annotation_text="0 Spread", annotation_position="bottom right", secondary_y=False)
+
+    # Update layout and titles
+    fig.update_layout(
+        title_text="Treasury Yield Difference (10-Year - 2-Year) and Fed Funds Rate (Original Values)",
+        showlegend=True,
+        legend_title_text='Series',
+        hovermode="x unified" # Improves hover experience for multiple traces
+    )
+
+    # Set y-axis titles
+    fig.update_yaxes(title_text="Yield Difference (%)", secondary_y=False, title_font=dict(color="blue"))
+    fig.update_yaxes(title_text="Fed Funds Rate (%)", secondary_y=True, title_font=dict(color="red"))
+    fig.update_xaxes(title_text="Date")
+
     return fig
 
 def plot_standardized_fx_treasuries(standardized_df):
@@ -252,6 +298,7 @@ def plot_standardized_fx_treasuries(standardized_df):
     cols_to_plot = []
     labels_map = {}
     series_to_check = {
+        "Federal_Funds_Rate_std": "Federal Funds Rate (Std)",
         "USD_Index_FRED_std": "USD Index (Std)",
         "US_2Y_Treasury_std": "2Y Treasury (Std)",
         "US_10Y_Treasury_std": "10Y Treasury (Std)",
@@ -318,23 +365,49 @@ def plot_standardized_usd_treasuries_commodities(standardized_df):
 # --- Main execution block ---
 if __name__ == "__main__":
     print("Running T(s,a)_to_d.py directly for testing interactive plots...")
-    success, file_path = fetch_and_store_data()
+    
+    fda_module = globals()
+    
+    success, file_path = fda_module['fetch_and_store_data']()
+    
+    
     if success and file_path:
-        original_data, standardized_data_for_plots = load_and_prepare_data_for_plotting(file_path)
+        original_data, standardized_data_for_plots = fda_module['load_and_prepare_data_for_plotting'](file_path)
+        
         if original_data is not None and standardized_data_for_plots is not None:
             print("\n--- Generating All Plots (Test Run - will open in browser) ---")
             
-            fig1 = plot_standardized_usd_treasuries(standardized_data_for_plots)
-            if fig1: fig1.show()
-            
-            fig2 = plot_treasury_spread(original_data)
-            if fig2: fig2.show()
-            
-            fig3 = plot_standardized_fx_treasuries(standardized_data_for_plots)
-            if fig3: fig3.show()
-            
-            fig4 = plot_standardized_usd_treasuries_commodities(standardized_data_for_plots)
-            if fig4: fig4.show()
+            # Plot 1
+            print("\nGenerating Interactive Plot 1: Standardized USD Index, 2-Year & 10-Year Treasury Yields...")
+            if not standardized_data_for_plots.empty:
+                fig1 = fda_module['plot_standardized_usd_treasuries'](standardized_data_for_plots)
+                if fig1: fig1.show()
+            else:
+                print("Standardized data is empty. Skipping Plot 1.")
+
+            # Plot 2
+            print("\nGenerating Interactive Plot 2: Treasury Yield Difference (Original Values)...")
+            if not original_data.empty:
+                fig2 = fda_module['plot_treasury_spread'](original_data)
+                if fig2: fig2.show()
+            else:
+                print("Original data is empty. Skipping Plot 2.")
+
+            # Plot 3
+            print("\nGenerating Interactive Plot 3: Standardized USD Index, Treasuries & FX Rates...")
+            if not standardized_data_for_plots.empty:
+                fig3 = fda_module['plot_standardized_fx_treasuries'](standardized_data_for_plots)
+                if fig3: fig3.show()
+            else:
+                print("Standardized data is empty. Skipping Plot 3.")
+
+            # Plot 4
+            print("\nGenerating Interactive Plot 4: Standardized USD Index, Treasuries, Brent & WTI Oil Prices...")
+            if not standardized_data_for_plots.empty:
+                fig4 = fda_module['plot_standardized_usd_treasuries_commodities'](standardized_data_for_plots)
+                if fig4: fig4.show()
+            else:
+                print("Standardized data is empty. Skipping Plot 4.")
             
             print("\n--- All plots generated (Test Run). Check your browser. ---")
         else:
