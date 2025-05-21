@@ -2,18 +2,25 @@ This repository houses a long-term project to model the global macroeconomic lan
 
 ![Game Screenshot](images/game.jpg)
 
-######################
-###### definition ########
-######################
+
+###### Definition #######
+
 
 ### players:
 (aim: to gauge 'financial asset value' of each player)
 
 * US 
 
-* aggregated opponent ''Rest of the World'' RoW (Japan, UK, EU, China): define aggregation method
+* aggregated opponent ''Rest of the World'' RoW (Japan, UK, EU, China): define aggregation method --> single POMDP agent
 
 ### state space:
+
+Partially Observable MDP: Markovian but with element of uncertainty about true state.
+
+Players do not see true state s but observations o ∈ Ω
+Players operate based on belief state b(s) = likelihood of system being in s. 
+
+b(s) = Pr() distribution over all states
 
 * US indicators 
  - economic output & growth
@@ -26,6 +33,8 @@ This repository houses a long-term project to model the global macroeconomic lan
  - market sentiment & stability
  - investment 
  - supply chain
+
+Noisy, delayed, incomplete proxies for economic health (TRUE state)
 
 * RoW
  - Foreign holdings
@@ -63,7 +72,23 @@ achieve sustainable GDP growth, maintain inflation around target, maintain low u
 
 ### dynamics & timing
 
+CORE Challenge
+transition probabilities T(s'|s,a)  
+
+How does policy clashes affect state transitions? --> theory of combat
+
+O(o∣s,a) Pr() of observing o when s' after action a is taken and transition is completed. 
+(to consider, quality, timeliness of data)
+
+ - Transition dynamics:
+
  - time steps (discrete time steps)
  - turns (simultaneous moves)
  - information 
  - horizon (tactical moves or long-term strategic positioning?)
+
+### policy
+π(b)
+
+belief states to actions (optimal policy π^*)
+to define: belief update mechanism (Bayes' rule)
