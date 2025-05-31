@@ -9,8 +9,8 @@ load_dotenv()
 FRED_API_KEY = os.getenv('FRED_API_KEY')
 
 OUTPUT_DIR = "data/raw/US_indicators"
-INFLATION_INDICATORS_CSV_FILE = os.path.join(OUTPUT_DIR, 'us_inflation_related_indicators.csv')
-INFLATION_INDICATORS_PARQUET_FILE = os.path.join(OUTPUT_DIR, 'us_inflation_related_indicators.parquet')
+LABOR_MARKET_INDICATORS_CSV_FILE = os.path.join(OUTPUT_DIR, 'us_labor_market_indicators.csv')
+LABOR_MARKET_INDICATORS_PARQUET_FILE = os.path.join(OUTPUT_DIR, 'us_labor_market_indicators.parquet')
 
 if FRED_API_KEY:
     os.environ['FRED_API_KEY'] = FRED_API_KEY
@@ -20,22 +20,16 @@ else:
 END_DATE = datetime.datetime.now()
 START_DATE = END_DATE - datetime.timedelta(days=2 * 365)
 
-series_map_inflation = {
-    "Sticky Price CPI less Food and Energy": "CORESTICKM159SFRBATL",
-    "CPI All Items Total US": "CPALTT01USM657N",
-    "PPI All Commodities": "PPIACO",
-    "PPI Total Manufacturing Industries": "PCUOMFGOMFG",
-    "Personal Consumption Expenditures": "PCE",
-    "PCE Excluding Food and Energy (Chain-Type Price Index)": "DPCCRV1Q225SBEA",
-    "ECI Wages and Salaries Private Industry": "ECIWAG",
-    "ECI Total Compensation All Civilian": "ECIALLCIV",
-    "University of Michigan Inflation Expectation": "MICH",
-    "10-Year Expected Inflation": "EXPINF10YR",
-    "2-Year Expected Inflation": "EXPINF2YR",
-    "Import Price Index All Commodities": "IR",
-    "Export Price Index All Commodities": "IQ",
-    "10-Year TIPS 0.5% 2028": "DTP10J28",
-    "10-Year TIPS 0.125% 2030": "DTP10J30"
+series_map_labor = {
+    "Unemployment Rate": "UNRATE",
+    "All Employees Total Nonfarm": "PAYEMS",
+    "Labor Force Participation Rate": "CIVPART",
+    "Average Hourly Earnings Total Private": "CES0500000003",
+    "Initial Claims": "ICSA",
+    "Continued Claims (Insured Unemployment)": "CCSA",
+    "Job Openings Total Nonfarm": "JTSJOL",
+    "Hires Total Nonfarm": "JTSHIL",
+    "Layoffs and Discharges Total Nonfarm": "JTSLDL"
 }
 
 def fetch_fred_data(series_dict, start_date, end_date):
@@ -94,17 +88,16 @@ if __name__ == "__main__":
     if not FRED_API_KEY:
         print("FRED_API_KEY is not set. Please set it in your .env file or environment variables.")
     else:
-        print("Fetching US Inflation-Related Economic Indicators from FRED...")
-        us_inflation_indicators_df = fetch_fred_data(series_map_inflation, START_DATE, END_DATE)
+        print("Fetching US Labor Market Economic Indicators from FRED...")
+        us_labor_market_indicators_df = fetch_fred_data(series_map_labor, START_DATE, END_DATE)
 
-        if not us_inflation_indicators_df.empty:
-            print("\n--- Combined US Inflation-Related Indicators Data (Last 5 entries) ---")
-            print(us_inflation_indicators_df.tail())
-            print("\n--- Combined US Inflation-Related Indicators Data (First 5 entries) ---")
-            print(us_inflation_indicators_df.head())
-            print(f"\nShape of the DataFrame: {us_inflation_indicators_df.shape}")
+        if not us_labor_market_indicators_df.empty:
+            print("\n--- Combined US Labor Market Indicators Data (Last 5 entries) ---")
+            print(us_labor_market_indicators_df.tail())
+            print("\n--- Combined US Labor Market Indicators Data (First 5 entries) ---")
+            print(us_labor_market_indicators_df.head())
+            print(f"\nShape of the DataFrame: {us_labor_market_indicators_df.shape}")
             
-            store_data(us_inflation_indicators_df, INFLATION_INDICATORS_CSV_FILE, INFLATION_INDICATORS_PARQUET_FILE)
+            store_data(us_labor_market_indicators_df, LABOR_MARKET_INDICATORS_CSV_FILE, LABOR_MARKET_INDICATORS_PARQUET_FILE)
         else:
             print("Failed to retrieve any data. Nothing to store.")
-# --- End of Script ---
