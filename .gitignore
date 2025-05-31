@@ -31,10 +31,6 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-
-# PyInstaller
-# Usually these files are written by a script, but they may be committed by
-# mistake.
 *.manifest
 *.spec
 
@@ -71,7 +67,7 @@ venv.bak/
 *.sublime-project
 *.sublime-workspace
 
-# Sensitive files - ADD YOURS HERE!
+# Sensitive files - ADD HERE!
 tokens.json
 credentials.json
 secrets.yaml
