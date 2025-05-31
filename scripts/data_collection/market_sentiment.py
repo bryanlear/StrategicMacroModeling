@@ -4,17 +4,12 @@ import datetime
 import os
 from dotenv import load_dotenv
 
-#SOME SERIES ARE ANNUAL, OTHERS ARE DAILY/MONTHLY !!!!!!!!!!!!
-##################################################
-
-# --- Configuration ---
-
 load_dotenv()
 FRED_API_KEY = os.getenv('FRED_API_KEY')
 
 OUTPUT_DIR = "data/raw/US_indicators"
-FISCAL_HEALTH_INDICATORS_CSV_FILE = os.path.join(OUTPUT_DIR, 'us_fiscal_health_indicators.csv')
-FISCAL_HEALTH_INDICATORS_PARQUET_FILE = os.path.join(OUTPUT_DIR, 'us_fiscal_health_indicators.parquet')
+MARKET_SENTIMENT_INDICATORS_CSV_FILE = os.path.join(OUTPUT_DIR, 'us_market_sentiment_indicators.csv')
+MARKET_SENTIMENT_INDICATORS_PARQUET_FILE = os.path.join(OUTPUT_DIR, 'us_market_sentiment_indicators.parquet')
 
 if FRED_API_KEY:
     os.environ['FRED_API_KEY'] = FRED_API_KEY
@@ -22,22 +17,22 @@ else:
     print("Warning: FRED_API_KEY not found. Data fetching might be limited or fail.")
 
 END_DATE = datetime.datetime.now()
-START_DATE = END_DATE - datetime.timedelta(days=10 * 365) # Default to 10 years for potentially less frequent series
+START_DATE = END_DATE - datetime.timedelta(days=5 * 365) # Default to 5 years
 
-series_map_fiscal = {
-    "Federal Surplus or Deficit": "MTSDS133FMS",
-    "Federal Debt Total Public Debt as Percent of GDP": "GFDEGDQ188S",
-    "Fed Assets Held Outright US Treasury Securities": "TREAST",
-    "Fed Assets Held Outright Mortgage-Backed Securities": "WSHOMCB",
-    "Share of Net Worth Held by Top 1%": "WFRBST01134",
-    "Federal Debt Held by the Public (Annual)": "FYGFDPUN", # Note: This is annual
-    "Federal Debt Total Public Debt (Daily/Monthly)": "GFDEBTN",
-    "Gross Federal Debt Held by the Public (Annual)": "FYGFDPUB", # Note: This is annual
-    "Federal Debt Held by Federal Reserve Banks": "FDHBFRBN",
-    "Federal Debt Held by Foreign and International Investors": "FDHBFIN",
-    "Federal Government Current Tax Receipts": "W006RC1Q027SBEA",
-    "Federal Government Current Receipts": "FGRECPT",
-    "Total Federal Outlays": "MTSO133FMS"
+series_map_sentiment = {
+    "NASDAQ Composite Index": "NASDAQCOM",
+    "S&P 500": "SP500",
+    "Dow Jones Industrial Average": "DJIA",
+    "CBOE Volatility Index VIX": "VIXCLS",
+    "CBOE Equity VIX on Goldman Sachs": "VXGSCLS",
+    "Moody's Baa Corp Bond Yield Relative to 10Y Treasury": "BAA10Y",
+    "Moody's Aaa Corp Bond Yield Relative to 10Y Treasury": "AAA10Y",
+    "Chicago Fed National Financial Conditions Index": "NFCI",
+    "St. Louis Fed Financial Stress Index": "STLFSI4",
+    "University of Michigan Consumer Sentiment": "UMCSENT",
+    "Composite Business Confidence Amplitude Adjusted US": "BSCICP03USM665S",
+    "Equity Market Volatility Tracker Macro Business Investment Sentiment": "EMVMACROBUS",
+    "Chicago Fed National Financial Conditions Risk Subindex": "NFCIRISK"
 }
 
 def fetch_fred_data(series_dict, start_date, end_date):
@@ -95,16 +90,16 @@ if __name__ == "__main__":
     if not FRED_API_KEY:
         print("FRED_API_KEY is not set. Please set it in your .env file or environment variables.")
     else:
-        print("Fetching US Fiscal Health Economic Indicators from FRED...")
-        us_fiscal_health_indicators_df = fetch_fred_data(series_map_fiscal, START_DATE, END_DATE)
+        print("Fetching US Market Sentiment & Stability Economic Indicators from FRED...")
+        us_market_sentiment_indicators_df = fetch_fred_data(series_map_sentiment, START_DATE, END_DATE)
 
-        if not us_fiscal_health_indicators_df.empty:
-            print("\n--- Combined US Fiscal Health Indicators Data (Last 5 entries) ---")
-            print(us_fiscal_health_indicators_df.tail())
-            print("\n--- Combined US Fiscal Health Indicators Data (First 5 entries) ---")
-            print(us_fiscal_health_indicators_df.head())
-            print(f"\nShape of the DataFrame: {us_fiscal_health_indicators_df.shape}")
+        if not us_market_sentiment_indicators_df.empty:
+            print("\n--- Combined US Market Sentiment & Stability Indicators Data (Last 5 entries) ---")
+            print(us_market_sentiment_indicators_df.tail())
+            print("\n--- Combined US Market Sentiment & Stability Indicators Data (First 5 entries) ---")
+            print(us_market_sentiment_indicators_df.head())
+            print(f"\nShape of the DataFrame: {us_market_sentiment_indicators_df.shape}")
             
-            store_data(us_fiscal_health_indicators_df, FISCAL_HEALTH_INDICATORS_CSV_FILE, FISCAL_HEALTH_INDICATORS_PARQUET_FILE)
+            store_data(us_market_sentiment_indicators_df, MARKET_SENTIMENT_INDICATORS_CSV_FILE, MARKET_SENTIMENT_INDICATORS_PARQUET_FILE)
         else:
             print("Failed to retrieve any data. Nothing to store.")
