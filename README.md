@@ -1,94 +1,121 @@
-This repository houses a long-term project to model the global macroeconomic landscape as a strategic 'chess game' between the US and the Rest of the World (RoW). It involves collecting extensive US macroeconomic and market data (Treasuries, foreign bond holdings, financial assets) to gain a clear view of the 'board.' The ultimate goal is to better anticipate potential 'next moves' by leveraging concepts from Optimal Control Theory, Game Theory, Theory of Combat, and Multi-Agent Reinforcement Learning.
+# Strategic Macroeconomic Modeling
+
+A long-term project to model the global macroeconomic landscape as a strategic 'chess game' between the US and the Rest of the World (RoW), leveraging concepts from Control Theory, Game Theory, and Reinforcement Learning.
 
 ![Game Screenshot](images/game.jpg)
 
+---
 
-###### Definition #######
+## Table of Contents
 
+- [Strategic Macroeconomic Modeling](#strategic-macroeconomic-modeling)
+  - [Table of Contents](#table-of-contents)
+  - [About The Project](#about-the-project)
+  - [Game-Theoretic Framework](#game-theoretic-framework)
+    - [Players](#players)
+    - [State Space (POMDP)](#state-space-pomdp)
+    - [Action Space](#action-space)
+    - [Reward Function](#reward-function)
+    - [Dynamics and Policy](#dynamics-and-policy)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [Usage](#usage)
+  - [Roadmap](#roadmap)
 
-### players:
-(aim: to gauge 'financial asset value' of each player)
+---
 
-* US 
+## About The Project
 
-* aggregated opponent ''Rest of the World'' RoW (Japan, UK, EU, China): define aggregation method --> single POMDP agent
+This repository houses a long-term project to model the global macroeconomic landscape as a strategic game between the **United States** and an aggregated **Rest of the World (RoW)** opponent.
 
-### state space:
+The core objective is to collect and analyze extensive US and global macroeconomic data (e.g., Treasury markets, foreign bond holdings, financial assets) to create a clear view of the economic "board." The ultimate goal is to anticipate potential 'next moves' by opponents and understand policy impacts by framing the system as a dynamic game.
 
-Partially Observable MDP: Markovian but with element of uncertainty about true state.
+The model is built on concepts from:
+* Optimal Control Theory
+* Game Theory
+* Lanchester's Laws (Theory of Combat)
+* Multi-Agent Reinforcement Learning (MARL)
 
-Players do not see true state s but observations o ∈ Ω
-Players operate based on belief state b(s) = likelihood of system being in s. 
+---
 
-b(s) = Pr() distribution over all states
+## Game-Theoretic Framework
 
-* US indicators 
- - economic output & growth
- - prices & inflation
- - labour market
- - ineterest rates 
- - fiscal health
- - trade & international position
- - currency strength 
- - market sentiment & stability
- - investment 
- - supply chain
+The model is defined as a two-player (For now for the sake of simplicity), simultaneous-move game under uncertainty **Partially Observable Markov Decision Process (POMDP)**.
 
-Noisy, delayed, incomplete proxies for economic health (TRUE state)
+### Players
 
-* RoW
- - Foreign holdings
- - relative economic performance
- - global factors
+The game consists of two strategic agents:
+* **United States (US):** The primary agent whose financial and economic value is to be modeled.
+* **Rest of the World (RoW):** A single, aggregated opponent representing the collective actions and economic standing of major world economies (e.g., Japan, UK, EU, China). The actions of this agent are modeled as an aggregated policy or capital allocation stance.
 
-* relational and global indicators
+### State Space (POMDP)
 
-### action space:
-(available levers players can pull) 
+Players do not observe the "true" state of the world's economic health directly. Instead, they receive noisy, delayed, and incomplete observations. This introduces uncertainty, which is why the system is modeled as a POMDP.
 
-* US actions: 
- - fiscal policy 
- - monetary policy 
- - trade policy 
+* **True State ($s$):** A latent, unobservable vector representing the actual health and configuration of the global economy.
+* **Observations ($o$):** Players receive observations $o \in \Omega$ which are proxies for the true state. These are the real-world data points that are collected:
+    * **US Indicators:**
+        * Economic Output & Growth (GDP, etc.)
+        * Prices & Inflation (CPI, PPI, etc.)
+        * Labor Market (Unemployment, NFP)
+        * Interest Rates (Fed Funds, Treasury Yields)
+        * Fiscal Health (Debt-to-GDP, Deficit)
+        * Trade & International Position (Trade Balance, Current Account)
+        * Currency Strength (Dollar Indices)
+        * Market Sentiment & Stability (VIX, Financial Conditions)
+        * Investment (GPDI, FDI)
+        * Supply Chain (GSCPI, PMI components)
+    * **RoW Indicators:**
+        * Foreign holdings of US assets.
+        * Relative economic performance vs. the US.
+        * Global factors (e.g., global PMIs, commodity prices).
+* **Belief State ($b(s)$):** Based on the history of observations, each player maintains a **belief state**, which is a probability distribution ($b(s) = \Pr(s_t=s | o_{1:t}, a_{1:t-1})$) over all possible true states. The agent's policy operates on this belief state.
 
-* aggregated:
-  - capital allocation decisions (1) or reflective aggregated policy stance (2)
-  - actions as reactions based on 2 (analogous to US actions)
+### Action Space
 
+The action space consists of the economic and policy levers each player can pull.
 
-### reward function
- 
- - US: Maximize custom index "US Financial Asset Value" (UFAV).
-   to consider components for constructing index. (+weights GDP, growth, SP500, low unemployment, rate of change inflation, demand for US assets, FX. -weights debt-to-GDP, VIX,...)
+* **US Actions:**
+    * **Fiscal Policy:** Changes in government spending and taxation.
+    * **Monetary Policy:** Adjustments to interest rates and central bank balance sheet.
+    * **Trade Policy:** Tariffs, trade agreements, and other trade-related measures.
+* **RoW Actions:**
+    * **Capital Allocation:** Aggregated decisions on buying/selling US assets (e.g., Treasuries).
+    * **Reflective Policy Stance:** An aggregated representation of the RoW's collective fiscal and monetary responses, analogous to US actions.
 
-(to consider for secondary objective:
+### Reward Function
 
-e.g.:
+Each player's objective is to maximize their own custom utility index, which serves as the reward function.
 
-achieve sustainable GDP growth, maintain inflation around target, maintain low unemployment...)
+* **US Reward:** Maximize the **"US Financial Asset Value" (UFAV)** index. This custom index is a weighted sum of positive and negative indicators:
+    * **Positive components (+):** GDP growth, S&P 500 returns, low unemployment, stable inflation, high demand for US assets, currency strength (FX).
+    * **Negative components (-):** High debt-to-GDP ratio, high market volatility (VIX).
+* **RoW Reward:** Maximize the **"RoW Economic Value" (RoWEV)** index, a custom aggregated index representing the economic well-being of the RoW bloc.
 
- - RoW: Maximize custom aggregated index "RoW Economic Value" (RoWEV).
+### Dynamics and Policy
 
+* **Transition Dynamics ($T(s'|s,a)$):** A core challenge is defining the transition probabilities—how the true state $s$ evolves into a new state $s'$ given a joint action $a$. The model will explore using frameworks like the Theory of Combat to represent how policy clashes influence state transitions.
+* **Observation Dynamics ($O(o|s',a)$):** This function defines the probability of seeing observation $o$ given the system has transitioned to state $s'$ after action $a$. This accounts for data quality, delays, and noise.
+* **Policy ($\pi(b) \to a$):** The ultimate goal is to find an optimal policy $\pi^*$ that maps a belief state $b$ to an optimal action $a$. This policy will be developed and refined using a belief update mechanism (like Bayes' rule) and solved with techniques from reinforcement learning and optimal control.
+* **Timing & Horizon:** The game is modeled with discrete time steps and simultaneous moves. The strategic horizon can be adjusted to analyze both tactical moves and long-term positioning.
 
-### dynamics & timing
+---
 
-CORE Challenge
-transition probabilities T(s'|s,a)  
+## Getting Started
 
-How does policy clashes affect state transitions? --> theory of combat
+*(placeholder, nothing to see here Mind your business)*
 
-O(o∣s,a) Pr() of observing o when s' after action a is taken and transition is completed. 
-(to consider, quality, timeliness of data)
+### Prerequisites
 
- - Transition dynamics:
+### Installation
 
- - time steps (discrete time steps)
- - turns (simultaneous moves)
- - information 
- - horizon (tactical moves or long-term strategic positioning?)
+## Usage
 
-### policy
-π(b)
+## Roadmap
 
-belief states to actions (optimal policy π^*)
-to define: belief update mechanism (Bayes' rule)
+* [ ] Finalize data collection pipeline for all state space indicators.
+* [ ] Implement the core POMDP environment.
+* [ ] Develop baseline agent policies.
+* [ ] Train and evaluate MARL agents.
+* [ ] Add back-testing and scenario analysis capabilities.
