@@ -114,7 +114,7 @@ Each player's objective is to maximize their own custom utility index, which ser
 
 ## Roadmap
 
-* [ ] Finalize data collection pipeline for all state space indicators.
+* [*] Finalize data collection pipeline for all state space indicators.
 * [ ] Implement the core POMDP environment.
 * [ ] Develop baseline agent policies.
 * [ ] Train and evaluate MARL agents.
