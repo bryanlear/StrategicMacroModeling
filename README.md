@@ -114,7 +114,24 @@ Each player's objective is to maximize their own custom utility index, which ser
 
 ## Roadmap
 
-* [*] Finalize data collection pipeline for all state space indicators.
+* [x] Finalize data collection pipeline for all state space indicators.
+* [ ] Data Loading and Cleaning
+
+* [ ] Time Series Alignment and Resampling
+  * [ ] Target Freq is Q thus upsample lower-frequency data annual (mostly for China data) to Q (need to define interpolation method)
+  * [ ] Ensure DataFrames share same quaterly time index and handle missing values
+  
+* [ ] Aggregate RoW agent
+  * [ ] Aggreagation methodology - GDP-weighted average
+  * [ ] (for each time step) Total GDP of RoW and weight of each country in it
+  * [ ] For each RoW indicator, calculate aggregated RoW value - weighted average of country using GDP weights for x time period
+  
+* [ ] Feature Engineering and Final Construction
+  * [ ] Calculate Relational Indicators
+  * [ ] Construct UFAV and RoWEV Indices
+  * [ ] Create Master DataFrame
+  * [ ] Data Validation
+
 * [ ] Implement the core POMDP environment.
 * [ ] Develop baseline agent policies.
 * [ ] Train and evaluate MARL agents.
